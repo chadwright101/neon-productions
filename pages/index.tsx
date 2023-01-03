@@ -2,13 +2,21 @@ import Head from "next/head";
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import BasicSlideshow from "../components/slideshow/basic-slideshow";
+import homeSlideImages from "../data/home-slideshow.json";
+
+export const getStaticProps = async () => {
+  return {
+    props: { image: homeSlideImages },
+  };
+};
 
 interface Props {
   title: string;
   content: string;
+  data: string;
 }
 
-export default function Home({ title, content }: Props) {
+export default function Home({ title, content, data }: Props) {
   return (
     <>
       <Head>
