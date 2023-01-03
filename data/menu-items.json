@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Home",
+    "href": "/"
+  },
+  {
+    "title": "Your Photographer",
+    "href": "/your-photographer",
+    "classes": "hidden desktop:block"
+  },
+  {
+    "title": "Photography Portfolio",
+    "href": "/photography-portfolio",
+    "subMenuItems": [
+      {
+        "title": "Newborn",
+        "href": "/photography-portfolio/newborn"
+      },
+      {
+        "title": "Lifestyle",
+        "href": "/photography-portfolio/lifestyle"
+      },
+      {
+        "title": "Boudoir",
+        "href": "/photography-portfolio/boudoir"
+      },
+      {
+        "title": "Corporate",
+        "href": "/photography-portfolio/corporate"
+      }
+    ]
+  },
+  {
+    "title": "Packages & Pricing",
+    "href": "/packages-pricing"
+  },
+  {
+    "title": "Dress Hire",
+    "href": "/dress-hire"
+  },
+  {
+    "title": "Contact Me",
+    "href": "/contact"
+  }
+]

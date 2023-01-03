@@ -1,107 +1,217 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+@font-face {
+    font-family: "Acid";
+    font-weight: 400;
+    src:
+        url("../fonts/acid/acid.woff2") format("woff2"),
+        url("../fonts/acid/acid.woff") format("woff"),
+        url("../fonts/acid/acid.otf") format("opentype");
+    font-display: swap
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
+@font-face {
+    font-family: "Acid";
+    font-weight: 500;
+    src:
+        url("../fonts/acid/acid_medium.woff2") format("woff2"),
+        url("../fonts/acid/acid_medium.woff") format("woff"),
+        url("../fonts/acid/acid_medium.otf") format("opentype");
+    font-display: swap
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@font-face {
+    font-family: "Acid";
+    font-weight: 700;
+    src:
+        url("../fonts/acid/acid_bold.woff2") format("woff2"),
+        url("../fonts/acid/acid_bold.woff") format("woff"),
+        url("../fonts/acid/acid_bold.otf") format("opentype");
+    font-display: swap
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@font-face {
+    font-family: "RuckSack";
+    font-weight: 300;
+    src:
+        url("../fonts/rucksack/RuskSack-Light.woff2") format("woff2"),
+        url("../fonts/rucksack/RuskSack-Light.woff") format("woff"),
+        url("../fonts/rucksack/RuskSack-Light.otf") format("opentype");
+    font-display: swap
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+    font-family: "RuckSack";
+    font-weight: 400;
+    src:
+        url("../fonts/rucksack/RuckSack-Book.woff2") format("woff2"),
+        url("../fonts/rucksack/RuckSack-Book.woff") format("woff"),
+        url("../fonts/rucksack/RuckSack-Book.otf") format("opentype");
+    font-display: swap
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+    font-family: "RuckSack";
+    font-weight: 700;
+    src:
+        url("../fonts/rucksack/RuskSack-Bold.woff2") format("woff2"),
+        url("../fonts/rucksack/RuskSack-Bold.woff") format("woff"),
+        url("../fonts/rucksack/RuskSack-Bold.otf") format("opentype");
+    font-display: swap
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+@layer base {
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply tracking-tight font-Acid
+    }
+
+    p {
+        @apply text-base font-light
+    }
+
+    * {
+        @apply text-black
+    }
+}
+
+@layer components {
+    body {
+        overflow-x: hidden
+    }
+
+    .golden-nav {
+        background-image: url('/general/gold.webp');
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-transform: uppercase;
+    }
+
+    .golden-nav:hover {
+        background-image: url('/general/gold2.webp');
+    }
+
+    .golden {
+        text-align: center;
+        background-image: url('/general/gold2.webp');
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-transform: uppercase;
+    }
+
+    .golden-hover-1:hover {
+        background-image: url('/general/gold.webp');
+    }
+
+    .golden-hover-2:hover {
+        background-image: url('/general/gold2.webp');
+    }
+
+
+
+    @media (min-width: 900px) {
+        .collage {
+            width: 800px;
+            height: auto;
+            grid-template: 175px 175px 175px / 1fr 1fr 1fr;
+            gap: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (min-width: 1250px) {
+        .collage {
+            width: 900px;
+            grid-template: 220px 220px 220px / 1fr 1fr 1fr;
+        }
+    }
+
+    @media (min-width: 1350px) {
+        .collage {
+            width: 1000px;
+            grid-template: 245px 245px 245px / 1fr 1fr 1fr;
+        }
+    }
+
+
+    .collage>img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .collage-2 {
+        grid-column: 1;
+    }
+
+    .collage-3 {
+        grid-row: 1 / 3;
+        grid-column: 2
+    }
+
+    .collage-4 {
+        grid-row: 1 / 3;
+        grid-column: 3
+    }
+
+    .collage-5,
+    .collage-6,
+    .collage-7 {
+        grid-row: 3 / 5
+    }
+
+    .your-photographer-collage {
+        height: auto;
+        gap: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1000px;
+        grid-template: 245px 245px / 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 1250px) {
+        .your-photographer-collage {
+            width: 900px;
+            grid-template: 220px 220px / 1fr 1fr 1fr;
+        }
+    }
+
+    .your-photographer-collage img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    .vendors {
+        width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        column-gap: 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .vendors>li {
+        width: 315px;
+        display: grid;
+        grid-template-rows: 225px 1fr;
+    }
+
+    .vendors img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
 }
