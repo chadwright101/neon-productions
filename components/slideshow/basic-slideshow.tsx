@@ -33,21 +33,21 @@ const BasicSlideshow = ({
       loop={true}
       lazy={lazy ?? false}
     >
-      {imageList.map((image) => {
-        return (
-          <SwiperSlide>
-            <div className="flex justify-center bg-white">
-              <img
-                className={`${
-                  objectContain ? "object-contain" : "object-cover"
-                } w-full h-[375px] tablet:h-[520px] desktop:h-[700px] desktop:w-[1000px]`}
-                src={image.src}
-                alt={image.alt}
-              />
-            </div>
-          </SwiperSlide>
-        );
-      })}
+      {imageList.map((image, index) => (
+          (
+              <SwiperSlide key={index}>
+                <div className="flex justify-center bg-white">
+                  <img
+                      className={`${
+                          objectContain ? "object-contain" : "object-cover"
+                      } w-full h-[375px] tablet:h-[520px] desktop:h-[700px] desktop:w-[1000px]`}
+                      src={image.src}
+                      alt={image.alt}
+                  />
+                </div>
+              </SwiperSlide>
+          )
+      ))}
     </Swiper>
   );
 };

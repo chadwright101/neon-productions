@@ -4,19 +4,15 @@ import Heading, { HeadingVariant } from "../components/heading";
 import BasicSlideshow from "../components/slideshow/basic-slideshow";
 import homeSlideImages from "../data/home-slideshow.json";
 
-export const getStaticProps = async () => {
-  return {
-    props: { image: homeSlideImages },
-  };
-};
-
 interface Props {
   title: string;
   content: string;
-  data: string;
+  data: {
+    images: Array<{ src: string; alt: string; }>
+  };
 }
 
-export default function Home({ title, content, data }: Props) {
+export default function Home({ title, content }: Props) {
   return (
     <>
       <Head>
@@ -31,72 +27,7 @@ export default function Home({ title, content, data }: Props) {
         alt="A bunch of pink flowers"
       />
       <BasicSlideshow
-        imageList={[
-          {
-            src: "/home page/home-slideshow1.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow2.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow3.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow4.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow5.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow16.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow7.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow8.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow9.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow10.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow11.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow13.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow14.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow15.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow16.webp",
-            alt: "Neon Productions photography",
-          },
-          {
-            src: "/home page/home-slideshow17.webp",
-            alt: "Neon Productions photography",
-          },
-        ]}
+        imageList={homeSlideImages}
       />
       <ContentPadding>
         <main className="desktop:hidden">
@@ -108,7 +39,7 @@ export default function Home({ title, content, data }: Props) {
             call me Morgz, or Moo.
             <br />
             <br />
-            <div className="flex flex-wrap gap-4 justify-center">
+            <span className="flex flex-wrap gap-4 justify-center">
               <img
                 className="object-cover h-[245px] w-[360px]"
                 src="/your-photographer/morgan4.webp"
@@ -133,7 +64,7 @@ export default function Home({ title, content, data }: Props) {
                 alt=""
                 loading="lazy"
               />
-            </div>
+            </span>
             <br />
             I am a mom of 2 amazing, smart loving boys, Jax and Xav, and my
             biggest fan and supporter is my hubby Ruan who also sometimes jumps
