@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import GoldLine from "../components/gold-line";
@@ -21,11 +22,11 @@ const PackagesPricing = ({ title, content }: Props) => {
         </Heading>
         <GoldLine horizontal line1 classes="mb-8 desktop:mb-16" />
         <div>
-          <img
+          <Image
             src="/packages/Newborn Packages 2022.webp"
             alt="Newborn packages from Neon Productions"
           />
-          <img
+          <Image
             src="/packages/20220814_133226_0000.webp"
             alt="Family photoshoot packages from Neon Productions"
           />

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface Props {
   classes?: string;
 }
@@ -12,7 +14,7 @@ const FooterSocial = ({ classes }: Props) => {
           target="_blank"
           rel="noreferrer"
         >
-          <img
+          <Image
             className="w-12 h-full desktop:w-7"
             src="/graphics/instagram.webp"
             alt="Instagram logo"
@@ -27,7 +29,7 @@ const FooterSocial = ({ classes }: Props) => {
           target="_blank"
           rel="noreferrer"
         >
-          <img
+          <Image
             className="w-12 h-full desktop:w-7"
             src="/graphics/Facebook.webp"
             alt="Facebook logo"
@@ -42,7 +44,7 @@ const FooterSocial = ({ classes }: Props) => {
           target="_blank"
           rel="noreferrer"
         >
-          <img
+          <Image
             className="w-12 h-full desktop:w-7"
             src="/graphics/Pinterest.webp"
             alt="Pinterest logo"

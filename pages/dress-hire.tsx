@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ContentPadding from "../components/content-padding";
 import GoldLine from "../components/gold-line";
 import Heading, { HeadingVariant } from "../components/heading";
@@ -19,16 +20,16 @@ const DressHire = ({ title, content }: Props) => {
         <Heading variant={HeadingVariant.PageHeading}>Dress Hire</Heading>
         <GoldLine horizontal line1 classes=" mb-8 desktop:mb-16" />
         <div className="grid justify-items-center gap-8 desktop:grid-cols-2">
-          <img
+          <Image
             className="col-span-full"
             src="/dress hire/20220613_144947_0000.webp"
             alt="Dress hire examples"
           />
-          <img
+          <Image
             src="/dress hire/20220605_112329_0000.webp"
             alt="Dress hire article"
           />
-          <img
+          <Image
             src="/dress hire/png_20220613_100701_0000.webp"
             alt="Dress photography shoot special"
           />

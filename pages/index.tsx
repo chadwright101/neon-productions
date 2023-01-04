@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Head from "next/head";
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
@@ -18,7 +19,7 @@ export default function Home({ title, content }: Props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <img
+      <Image
         className="w-[800px] h-full m-auto object-cover"
         src="/general/peonies-background-tumblr-7.webp"
         alt="A bunch of pink flowers"
@@ -34,25 +35,25 @@ export default function Home({ title, content }: Props) {
             call me Morgz, or Moo.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-8">
-            <img
+            <Image
               className="object-cover h-[245px] w-[360px]"
               src="/your-photographer/morgan4.webp"
               alt=""
               loading="lazy"
             />
-            <img
+            <Image
               className=" object-cover h-[245px] w-[190px]"
               src="/your-photographer/morgan1.webp"
               alt=""
               loading="lazy"
             />
-            <img
+            <Image
               className="hidden desktop:block object-cover h-[245px] w-[190px]"
               src="/your-photographer/morgan3.webp"
               alt=""
               loading="lazy"
             />
-            <img
+            <Image
               className="object-cover h-[245px] w-[190px]"
               src="/your-photographer/morgan2.webp"
               alt=""
@@ -88,7 +89,9 @@ export default function Home({ title, content }: Props) {
             amazing team including, Ruan, Lexi and Shelby help me on this
             awesome adventure and I just cannot thank them enough!
           </p>
-          <p>I can't wait to see you in front of my lens very very soon!</p>
+          <p>
+            I can&apos;t wait to see you in front of my lens very very soon!
+          </p>
           <p>Love Morgan, Morgz, Moo</p>
         </main>
       </ContentPadding>

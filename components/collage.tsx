@@ -1,3 +1,4 @@
+import Image from "next/image";
 interface Props {
   imageList: Array<{
     src: string;
@@ -11,7 +12,7 @@ const Collage = ({ imageList, classes }: Props) => {
   return (
     <div className={`collage ${classes}`}>
       {imageList.map((item, index) => (
-        <img
+        <Image
           key={index}
           className={item.classes}
           src={item.src}

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import "animate.css";
 import menuItems from "../../data/menu-items.json";
+import Image from "next/image";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ const Header = () => {
     <header>
       <div className="grid place-items-center">
         <Link href="/">
-          <img
+          <Image
             className="h-full w-44 py-1 desktop:w-60"
             src="/general/Neon-Photography-Logo.webp"
             alt="Neon Productions logo"
@@ -40,7 +41,7 @@ const Header = () => {
         onClick={() => setMenuOpen(!menuOpen)}
         className="py-1 border-y border-y-black w-full desktop:hidden"
       >
-        <img
+        <Image
           className="m-auto w-12 h-11"
           src="/graphics/hamburger-menu.svg"
           alt="Hamburger menu icon"

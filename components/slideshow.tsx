@@ -1,9 +1,9 @@
+import Image from "next/image";
 import { useRef } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import GoldLine from "./gold-line";
 
 import "@splidejs/react-splide/css";
-import ContentPadding from "./content-padding";
 
 interface Props {
   imageList: Array<{ src: string; alt: string }>;
@@ -44,12 +44,9 @@ const Slideshow = ({
         }}
       >
         {imageList.map((item, index) => (
-          <SplideSlide>
-            <div
-              key={index}
-              className="w-full bg-white h-full flex justify-center"
-            >
-              <img
+          <SplideSlide key={index}>
+            <div className="w-full bg-white h-full flex justify-center">
+              <Image
                 className={`w-full h-[450px] tablet:h-[520px] desktop:h-[580px] ${
                   objectFit ? "object-cover" : "object-contain"
                 }`}
@@ -80,12 +77,9 @@ const Slideshow = ({
             }}
           >
             {imageList.map((item, index) => (
-              <SplideSlide>
-                <div
-                  key={index}
-                  className="w-full bg-black h-full flex justify-center"
-                >
-                  <img
+              <SplideSlide key={index}>
+                <div className="w-full bg-black h-full flex justify-center">
+                  <Image
                     onClick={() => handleThumbs(index)}
                     className="object-cover w-full h-36 hover:opacity-80 cursor-pointer"
                     src={item.src}

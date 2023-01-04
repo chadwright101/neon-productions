@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import Head from "next/head";
@@ -19,7 +20,7 @@ const Contact = ({ title, content }: Props) => {
         <div>
           <ul className="flex flex-col gap-8 text-md desktop:text-lg">
             <li className="flex gap-4 items-center font-light">
-              <img
+              <Image
                 className="w-12 h-full"
                 src="/graphics/Untitled-zdfgbc.webp"
                 alt="Email address icon"
@@ -32,7 +33,7 @@ const Contact = ({ title, content }: Props) => {
               </a>
             </li>
             <li className="flex gap-4 items-center font-light">
-              <img
+              <Image
                 className="w-12 h-full"
                 src="/graphics/dxhfg.webp"
                 alt="Phone number icon"
@@ -50,7 +51,7 @@ const Contact = ({ title, content }: Props) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
+                <Image
                   className="w-12 h-full"
                   src="/graphics/instagram.webp"
                   alt="Instagram logo"
@@ -72,7 +73,7 @@ const Contact = ({ title, content }: Props) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
+                <Image
                   className="w-12 h-full"
                   src="/graphics/Facebook.webp"
                   alt="Facebook logo"
@@ -94,7 +95,7 @@ const Contact = ({ title, content }: Props) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
+                <Image
                   className="w-12 h-full"
                   src="/graphics/Pinterest.webp"
                   alt="Pinterest logo"
@@ -112,7 +113,7 @@ const Contact = ({ title, content }: Props) => {
           </ul>
         </div>
 
-        <img
+        <Image
           className="w-[750px] h-[700px] object-cover mt-12 desktop:w-[350px] desktop:h-[370px] -translate-y-12"
           src="/contact/bts (2).webp"
           alt="Morgan on location at a photoshoot"

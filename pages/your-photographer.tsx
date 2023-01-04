@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import GoldLine from "../components/gold-line";
@@ -77,22 +78,22 @@ const YourPhotographer = ({ title, content }: Props) => {
             call me Morgz, or Moo.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-8">
-            <img
+            <Image
               className="object-cover h-[245px] w-[360px]"
               src="/your-photographer/morgan4.webp"
               alt=""
             />
-            <img
+            <Image
               className=" object-cover h-[245px] w-[190px]"
               src="/your-photographer/morgan1.webp"
               alt=""
             />
-            <img
+            <Image
               className="hidden desktop:block object-cover h-[245px] w-[190px]"
               src="/your-photographer/morgan3.webp"
               alt=""
             />
-            <img
+            <Image
               className="object-cover h-[245px] w-[190px]"
               src="/your-photographer/morgan2.webp"
               alt=""
@@ -127,7 +128,9 @@ const YourPhotographer = ({ title, content }: Props) => {
             amazing team including, Ruan, Lexi and Shelby help me on this
             awesome adventure and I just cannot thank them enough!
           </p>
-          <p>I can't wait to see you in front of my lens very very soon!</p>
+          <p>
+            I can&apos;t wait to see you in front of my lens very very soon!
+          </p>
           <p>Love Morgan, Morgz, Moo</p>
         </main>
         <article className="hidden desktop:block">
@@ -152,7 +155,7 @@ const YourPhotographer = ({ title, content }: Props) => {
                     </h4>
                   </Link>
                 )}
-                <img src={item.src} alt={item.alt} loading="lazy" />
+                <Image src={item.src} alt={item.alt} loading="lazy" />
               </div>
             ))}
           </div>
@@ -165,7 +168,7 @@ const YourPhotographer = ({ title, content }: Props) => {
           <ul className="vendors">
             {vendorList.map((item, index) => (
               <li key={index}>
-                <img
+                <Image
                   className={item.classes}
                   src={item.src}
                   alt={item.alt}
