@@ -1,0 +1,102 @@
+{
+  "newborn": [
+    {
+      "src": "/portfolio/newborn/slideshow/newborn-portfolio-slideshow-1.webp",
+      "alt": "Newborn photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/newborn/slideshow/newborn-portfolio-slideshow-2.webp",
+      "alt": "Newborn photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/newborn/slideshow/newborn-portfolio-slideshow-3.webp",
+      "alt": "Newborn photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/newborn/slideshow/newborn-portfolio-slideshow-4.webp",
+      "alt": "Newborn photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/newborn/slideshow/newborn-portfolio-slideshow-5.webp",
+      "alt": "Newborn photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/newborn/slideshow/newborn-portfolio-slideshow-6.webp",
+      "alt": "Newborn photography from Neon Productions"
+    }
+  ],
+  "lifestyle": [
+    {
+      "src": "/portfolio/lifestyle/slideshow/lifestyle-portfolio-slideshow-1.webp",
+      "alt": "Lifestyle photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/lifestyle/slideshow/lifestyle-portfolio-slideshow-2.webp",
+      "alt": "Lifestyle photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/lifestyle/slideshow/lifestyle-portfolio-slideshow-3.webp",
+      "alt": "Lifestyle photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/lifestyle/slideshow/lifestyle-portfolio-slideshow-4.webp",
+      "alt": "Lifestyle photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/lifestyle/slideshow/lifestyle-portfolio-slideshow-5.webp",
+      "alt": "Lifestyle photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/lifestyle/slideshow/lifestyle-portfolio-slideshow-6.webp",
+      "alt": "Lifestyle photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/lifestyle/slideshow/lifestyle-portfolio-slideshow-7.webp",
+      "alt": "Lifestyle photography from Neon Productions"
+    }
+  ],
+  "boudoir": [
+    {
+      "src": "/portfolio/boudoir/slideshow/boudoir-portfolio-slideshow-1.webp",
+      "alt": "Boudoir photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/boudoir/slideshow/boudoir-portfolio-slideshow-2.webp",
+      "alt": "Boudoir photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/boudoir/slideshow/boudoir-portfolio-slideshow-3.webp",
+      "alt": "Boudoir photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/boudoir/slideshow/boudoir-portfolio-slideshow-4.webp",
+      "alt": "Boudoir photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/boudoir/slideshow/boudoir-portfolio-slideshow-5.webp",
+      "alt": "Boudoir photography from Neon Productions"
+    }
+  ],
+  "corporate": [
+    {
+      "src": "/portfolio/corporate/slideshow/corporate-portfolio-slideshow-1.webp",
+      "alt": "Corporate photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/corporate/slideshow/corporate-portfolio-slideshow-2.webp",
+      "alt": "Corporate photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/corporate/slideshow/corporate-portfolio-slideshow-3.webp",
+      "alt": "Corporate photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/corporate/slideshow/corporate-portfolio-slideshow-4.webp",
+      "alt": "Corporate photography from Neon Productions"
+    },
+    {
+      "src": "/portfolio/corporate/slideshow/corporate-portfolio-slideshow-5.webp",
+      "alt": "Corporate photography from Neon Productions"
+    }
+  ]
+}

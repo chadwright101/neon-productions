@@ -44,7 +44,7 @@ const DressHire = ({ title, content }: Props) => {
         <Heading variant={HeadingVariant.Subheading}>Catalogues</Heading>
         <ul className="list-disc ml-4 flex flex-col gap-4 desktop:gap-0">
           {catalogueList.map((item, index) => (
-            <li>
+            <li key={index}>
               <a
                 className="py-2 text-blue desktop:hover:underline"
                 href={`/dress hire/catalogues/Neon Dress Catalogue Size ${item.size}.pdf`}

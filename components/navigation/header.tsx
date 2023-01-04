@@ -53,7 +53,7 @@ const Header = () => {
         >
           <ul className=" uppercase flex flex-col gap-2.5 items-center text-desktop tracking-tighter font-light text-md">
             {menuItems.map((item, index) => (
-              <li className={item.classes}>
+              <li className={item.classes} key={index}>
                 <Link
                   onClick={() => setMenuOpen(!menuOpen)}
                   href={item.href}
@@ -85,6 +85,7 @@ const Header = () => {
                 item.subMenuItems && (() => setSubmenuOpen(!submenuOpen))
               }
               className={`flex items-center gap-2 golden-nav`}
+              key={index}
             >
               <Link href={item.href}>{item.title}</Link>
 

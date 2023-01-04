@@ -1,0 +1,150 @@
+{
+  "newborn": [
+    {
+      "src": "/portfolio/newborn/newborn6.webp",
+      "alt": "Newborn photography from Neon Productions",
+      "classes": "collage-1"
+    },
+    {
+      "src": "/portfolio/newborn/newborn3.webp",
+      "alt": "Newborn photography from Neon Productions",
+      "classes": "collage-3"
+    },
+    {
+      "src": "/portfolio/newborn/newborn5.webp",
+      "alt": "Newborn photography from Neon Productions",
+      "classes": "collage-4"
+    },
+    {
+      "src": "/portfolio/newborn/newborn1.webp",
+      "alt": "Newborn photography from Neon Productions",
+      "classes": "collage-2"
+    },
+    {
+      "src": "/portfolio/newborn/newborn2.webp",
+      "alt": "Newborn photography from Neon Productions",
+      "classes": "collage-5"
+    },
+    {
+      "src": "/portfolio/newborn/newborn7.webp",
+      "alt": "Newborn photography from Neon Productions",
+      "classes": "collage-6"
+    },
+    {
+      "src": "/portfolio/newborn/newborn4.webp",
+      "alt": "Newborn photography from Neon Productions",
+      "classes": "collage-7"
+    }
+  ],
+  "lifestyle": [
+    {
+      "src": "/portfolio/lifestyle/lifestyle2.webp",
+      "alt": "Lifestyle photography from Neon Productions",
+      "classes": "collage-1"
+    },
+    {
+      "src": "/portfolio/lifestyle/lifestyle4.webp",
+      "alt": "Lifestyle photography from Neon Productions",
+      "classes": "collage-2"
+    },
+    {
+      "src": "/portfolio/lifestyle/lifestyle3.webp",
+      "alt": "Lifestyle photography from Neon Productions",
+      "classes": "collage-3"
+    },
+    {
+      "src": "/portfolio/lifestyle/lifestyle1.webp",
+      "alt": "Lifestyle photography from Neon Productions",
+      "classes": "collage-4"
+    },
+    {
+      "src": "/portfolio/lifestyle/lifestyle6.webp",
+      "alt": "Lifestyle photography from Neon Productions",
+      "classes": "collage-5"
+    },
+    {
+      "src": "/portfolio/lifestyle/lifestyle7.webp",
+      "alt": "Lifestyle photography from Neon Productions",
+      "classes": "collage-6"
+    },
+    {
+      "src": "/portfolio/lifestyle/lifestyle5.webp",
+      "alt": "Lifestyle photography from Neon Productions",
+      "classes": "collage-7"
+    }
+  ],
+  "boudoir": [
+    {
+      "src": "/portfolio/boudoir/boudoir-6.webp",
+      "alt": "Boudoir photography from Neon Productions",
+      "classes": "collage-1"
+    },
+    {
+      "src": "/portfolio/boudoir/boudoir-7.webp",
+      "alt": "Boudoir photography from Neon Productions",
+      "classes": "collage-2"
+    },
+    {
+      "src": "/portfolio/boudoir/boudoir-1.webp",
+      "alt": "Boudoir photography from Neon Productions",
+      "classes": "collage-3"
+    },
+    {
+      "src": "/portfolio/boudoir/boudoir-2.webp",
+      "alt": "Boudoir photography from Neon Productions",
+      "classes": "collage-4"
+    },
+    {
+      "src": "/portfolio/boudoir/boudoir-3.webp",
+      "alt": "Boudoir photography from Neon Productions",
+      "classes": "collage-5"
+    },
+    {
+      "src": "/portfolio/boudoir/boudoir-5.webp",
+      "alt": "Boudoir photography from Neon Productions",
+      "classes": "collage-6"
+    },
+    {
+      "src": "/portfolio/boudoir/boudoir-4.webp",
+      "alt": "Boudoir photography from Neon Productions",
+      "classes": "collage-7"
+    }
+  ],
+  "corporate": [
+    {
+      "src": "/portfolio/corporate/corporate-5.webp",
+      "alt": "Corporate photography from Neon Productions",
+      "classes": "collage-1"
+    },
+    {
+      "src": "/portfolio/corporate/corporate-7.webp",
+      "alt": "Corporate photography from Neon Productions",
+      "classes": "collage-2"
+    },
+    {
+      "src": "/portfolio/corporate/corporate-2.webp",
+      "alt": "Corporate photography from Neon Productions",
+      "classes": "collage-3"
+    },
+    {
+      "src": "/portfolio/corporate/corporate-6.webp",
+      "alt": "Corporate photography from Neon Productions",
+      "classes": "collage-4"
+    },
+    {
+      "src": "/portfolio/corporate/corporate-1.webp",
+      "alt": "Corporate photography from Neon Productions",
+      "classes": "collage-5"
+    },
+    {
+      "src": "/portfolio/corporate/corporate-3.webp",
+      "alt": "Corporate photography from Neon Productions",
+      "classes": "collage-6"
+    },
+    {
+      "src": "/portfolio/corporate/corporate-4.webp",
+      "alt": "Corporate photography from Neon Productions",
+      "classes": "collage-7"
+    }
+  ]
+}

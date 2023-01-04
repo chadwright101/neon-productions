@@ -11,7 +11,12 @@ const Collage = ({ imageList, classes }: Props) => {
   return (
     <div className={`collage ${classes}`}>
       {imageList.map((item, index) => (
-        <img className={item.classes} src={item.src} alt={item.alt} />
+        <img
+          key={index}
+          className={item.classes}
+          src={item.src}
+          alt={item.alt}
+        />
       ))}
     </div>
   );

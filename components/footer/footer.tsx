@@ -24,7 +24,7 @@ const Footer = () => {
           <h5 className="font-bold text-right mb-6 text-sm">Navigation</h5>
           <ul className="text-right font-light text-sm flex flex-col gap-3.5">
             {desktopFooterList.map((item, index) => (
-              <li>
+              <li key={index}>
                 <Link className="hover:underline" href={item.href}>
                   {item.title}
                 </Link>

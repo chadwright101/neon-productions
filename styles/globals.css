@@ -214,4 +214,20 @@
         height: 200px;
         object-fit: contain;
     }
+
+    .home-your-photographer p {
+        @apply text-center mb-8
+    }
+
+    .home-your-photographer p:nth-child(10) {
+        @apply mb-0
+    }
+
+    .your-photographer p {
+        @apply text-center mb-8
+    }
+
+    .your-photographer p:nth-child(11) {
+        @apply mb-0
+    }
 }
