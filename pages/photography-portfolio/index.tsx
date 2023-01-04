@@ -1,4 +1,4 @@
-import Button, { ButtonVariants } from "../../components/button";
+import Button from "../../components/button";
 import Collage from "../../components/collage";
 import ContentPadding from "../../components/content-padding";
 import Heading, { HeadingVariant } from "../../components/heading";
@@ -38,10 +38,7 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
           imageList={photographyPortfolioSlideshow.newborn}
         />
         <ContentPadding>
-          <Button
-            href="/photography-portfolio/newborn"
-            variant={ButtonVariants.Basic}
-          />
+          <Button href="/photography-portfolio/newborn" />
           <GoldLine horizontal line2 width="w-[400px] desktop:w-[1000px]" />
 
           <Heading variant={HeadingVariant.Subheading}>Lifestyle</Heading>
@@ -56,10 +53,7 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
           imageList={photographyPortfolioSlideshow.lifestyle}
         />
         <ContentPadding>
-          <Button
-            href="/photography-portfolio/lifestyle"
-            variant={ButtonVariants.Basic}
-          />
+          <Button href="/photography-portfolio/lifestyle" />
           <GoldLine horizontal line3 width="w-[400px] desktop:w-[1000px]" />
           <Heading variant={HeadingVariant.Subheading}>Boudoir</Heading>
           <Collage
@@ -73,10 +67,7 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
           imageList={photographyPortfolioSlideshow.boudoir}
         />
         <ContentPadding>
-          <Button
-            href="/photography-portfolio/boudoir"
-            variant={ButtonVariants.Basic}
-          />
+          <Button href="/photography-portfolio/boudoir" />
           <GoldLine horizontal line1 width="w-[400px] desktop:w-[1000px]" />
           <Heading variant={HeadingVariant.Subheading}>Corporate</Heading>
           <Collage
@@ -90,11 +81,7 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
           imageList={photographyPortfolioSlideshow.corporate}
         />
         <ContentPadding>
-          <Button
-            href="/photography-portfolio/corporate"
-            variant={ButtonVariants.Basic}
-          />
-          <GoldLine horizontal line2 width="w-[400px] desktop:w-[1000px]" />
+          <Button href="/photography-portfolio/corporate" />
         </ContentPadding>
       </main>
     </>
