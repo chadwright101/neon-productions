@@ -1,6 +1,6 @@
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
-import GoldLine, { LineVariant } from "../components/gold-line";
+import GoldLine from "../components/gold-line";
 import Head from "next/head";
 import { useState } from "react";
 import Link from "next/link";
@@ -71,7 +71,7 @@ const YourPhotographer = ({ title, content }: Props) => {
           <Heading variant={HeadingVariant.PageHeading}>
             Your Photographer
           </Heading>
-          <GoldLine variant={LineVariant.Line1} classes=" mb-8 desktop:mb-16" />
+          <GoldLine horizontal line1 classes=" mb-8 desktop:mb-16" />
           <p>
             Hi there! This is me, your main Photographer, Morgan. But you can
             call me Morgz, or Moo.
@@ -131,7 +131,7 @@ const YourPhotographer = ({ title, content }: Props) => {
           <p>Love Morgan, Morgz, Moo</p>
         </main>
         <article className="hidden desktop:block">
-          <GoldLine variant={LineVariant.Line2} classes=" my-4 desktop:my-12" />
+          <GoldLine horizontal line2 classes=" my-4 desktop:my-12" />
           <div className="your-photographer-collage hidden desktop:grid">
             {imageList.map((item, index) => (
               <div
@@ -156,7 +156,7 @@ const YourPhotographer = ({ title, content }: Props) => {
               </div>
             ))}
           </div>
-          <GoldLine variant={LineVariant.Line3} classes=" mt-4 desktop:mt-12" />
+          <GoldLine horizontal line3 classes=" mt-4 desktop:mt-12" />
         </article>
         <article>
           <Heading variant={HeadingVariant.Subheading}>

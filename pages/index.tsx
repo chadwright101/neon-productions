@@ -1,8 +1,8 @@
 import Head from "next/head";
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
-import BasicSlideshow from "../components/slideshow/basic-slideshow";
 import homeSlideImages from "../data/home-slideshow.json";
+import Slideshow from "../components/slideshow";
 
 interface Props {
   title: string;
@@ -23,7 +23,7 @@ export default function Home({ title, content }: Props) {
         src="/general/peonies-background-tumblr-7.webp"
         alt="A bunch of pink flowers"
       />
-      <BasicSlideshow imageList={homeSlideImages} />
+      <Slideshow imageList={homeSlideImages} objectFit={true} />
       <ContentPadding>
         <main className="desktop:hidden home-your-photographer">
           <Heading variant={HeadingVariant.Subheading}>

@@ -1,6 +1,6 @@
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
-import GoldLine, { LineVariant } from "../components/gold-line";
+import GoldLine from "../components/gold-line";
 import Head from "next/head";
 
 interface Props {
@@ -19,7 +19,7 @@ const PackagesPricing = ({ title, content }: Props) => {
         <Heading variant={HeadingVariant.PageHeading}>
           Packages & Pricing
         </Heading>
-        <GoldLine variant={LineVariant.Line1} classes="mb-8 desktop:mb-16" />
+        <GoldLine horizontal line1 classes="mb-8 desktop:mb-16" />
         <div>
           <img
             src="/packages/Newborn Packages 2022.webp"

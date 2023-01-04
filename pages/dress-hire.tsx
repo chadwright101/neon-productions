@@ -1,7 +1,6 @@
 import ContentPadding from "../components/content-padding";
 import GoldLine from "../components/gold-line";
 import Heading, { HeadingVariant } from "../components/heading";
-import { LineVariant, LineDirection } from "../components/gold-line";
 import Head from "next/head";
 
 interface Props {
@@ -18,7 +17,7 @@ const DressHire = ({ title, content }: Props) => {
       </Head>
       <main>
         <Heading variant={HeadingVariant.PageHeading}>Dress Hire</Heading>
-        <GoldLine variant={LineVariant.Line1} classes=" mb-8 desktop:mb-16" />
+        <GoldLine horizontal line1 classes=" mb-8 desktop:mb-16" />
         <div className="grid justify-items-center gap-8 desktop:grid-cols-2">
           <img
             className="col-span-full"
@@ -34,11 +33,7 @@ const DressHire = ({ title, content }: Props) => {
             alt="Dress photography shoot special"
           />
         </div>
-        <GoldLine
-          direction={LineDirection.Horizontal}
-          variant={LineVariant.Line2}
-          classes="mt-12 desktop:mt-16"
-        />
+        <GoldLine horizontal line2 classes="mt-12 desktop:mt-16" />
       </main>
       <article>
         <Heading variant={HeadingVariant.Subheading}>Catalogues</Heading>
@@ -56,11 +51,7 @@ const DressHire = ({ title, content }: Props) => {
             </li>
           ))}
         </ul>
-        <GoldLine
-          direction={LineDirection.Horizontal}
-          variant={LineVariant.Line1}
-          classes="mt-12"
-        />
+        <GoldLine horizontal line3 classes="mt-12" />
       </article>
     </ContentPadding>
   );

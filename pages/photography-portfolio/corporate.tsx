@@ -1,8 +1,8 @@
 import ContentPadding from "../../components/content-padding";
 import Heading, { HeadingVariant } from "../../components/heading";
-import ThumbnailSlideshow from "../../components/slideshow/thumbnail-slideshow";
 import Head from "next/head";
 import corporateSlideshow from "../../data/corporate-slideshow.json";
+import Slideshow from "../../components/slideshow";
 
 interface Props {
   title: string;
@@ -19,7 +19,7 @@ const Corporate = ({ title, content }: Props) => {
       <ContentPadding>
         <Heading variant={HeadingVariant.PageHeading}>Corporate</Heading>
       </ContentPadding>
-      <ThumbnailSlideshow imageList={corporateSlideshow} />
+      <Slideshow thumbnails={true} imageList={corporateSlideshow} />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import GoldLine, { LineDirection } from "../gold-line";
+import GoldLine from "../gold-line";
 import FooterContact from "./footer-contact";
 import FooterSocial from "./footer-social";
 import FooterVendor from "./footer-vendor";
@@ -32,7 +32,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <GoldLine direction={LineDirection.Vertical} />
+        <GoldLine vertical line1 />
 
         <div className="w-72">
           <FooterContact />

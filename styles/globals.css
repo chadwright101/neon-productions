@@ -148,6 +148,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+        object-position: center;
     }
 
     .collage-2 {
@@ -167,7 +168,12 @@
     .collage-5,
     .collage-6,
     .collage-7 {
-        grid-row: 3 / 5
+        grid-row: 3 / 5;
+        object-position: bottom;
+    }
+
+    .collage-position-bottom {
+        object-position: bottom;
     }
 
     .your-photographer-collage {

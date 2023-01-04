@@ -1,65 +1,48 @@
-export enum LineVariant {
-  Line1,
-  Line2,
-  Line3,
-}
-
-export enum LineDirection {
-  Vertical,
-  Horizontal,
-}
+import classnames from "classnames";
 
 interface Props {
-  variant?: LineVariant;
-  direction?: LineDirection;
+  line1?: boolean;
+  line2?: boolean;
+  line3?: boolean;
+  vertical?: boolean;
+  horizontal?: boolean;
   width?: string;
   classes?: string;
 }
 
-const GoldLine = ({ variant, direction, width, classes }: Props) => {
-  let containerClassNames;
-  let directionClassNames;
-  let variantLineClassNames = {
-    line1: "",
-    line2: "",
-  };
-
-  switch (direction) {
-    case LineDirection.Vertical:
-      containerClassNames = "flex flex-col";
-      directionClassNames = "h-full w-[2.5px] bg-gradient-to-t";
-      break;
-    case LineDirection.Horizontal:
-    default:
-      containerClassNames = "flex m-auto";
-      directionClassNames =
-        "w-full h-[2.75px] desktop:h-[4px] bg-gradient-to-r";
-      break;
-  }
-
-  switch (variant) {
-    case LineVariant.Line1:
-      variantLineClassNames.line1 = "from-gold1 via-gold3 to-gold2";
-      variantLineClassNames.line2 = "from-gold2 via-gold5 to-gold4";
-      break;
-    case LineVariant.Line2:
-      variantLineClassNames.line1 = "from-gold2 via-gold3 to-gold1";
-      variantLineClassNames.line2 = "from-gold1 via-gold4 to-gold5";
-      break;
-    case LineVariant.Line3:
-    default:
-      variantLineClassNames.line1 = "from-gold1 via-gold2 to-gold4";
-      variantLineClassNames.line2 = "from-gold4 via-gold2 to-gold5";
-      break;
-  }
-
+const GoldLine = ({
+  line1,
+  line2,
+  line3,
+  vertical,
+  horizontal,
+  width,
+  classes,
+}: Props) => {
   return (
-    <div className={`${containerClassNames} ${width}`}>
+    <div
+      className={classnames(`${width}`, {
+        "flex flex-col": vertical,
+        "flex m-auto": horizontal,
+      })}
+    >
       <div
-        className={`${variantLineClassNames.line1} ${directionClassNames} ${classes}`}
+        className={classnames(`${classes}`, {
+          "h-full w-[2.5px] bg-gradient-to-t": vertical,
+          "w-full h-[2.75px] desktop:h-[4px] bg-gradient-to-r": horizontal,
+          "from-gold1 via-gold3 to-gold2": line1,
+          "from-gold2 via-gold3 to-gold1": line2,
+          "from-gold1 via-gold2 to-gold4": line3,
+        })}
       ></div>
       <div
-        className={`${variantLineClassNames.line2} ${directionClassNames} ${classes}`}
+        className={classnames(`${classes}`, {
+          "h-full w-[2.5px] bg-gradient-to-t": vertical,
+          "w-full h-[2.75px] desktop:h-[4px] bg-gradient-to-r": horizontal,
+          "from-gold2 via-gold5 to-gold4": line1,
+          "from-gold1 via-gold4 to-gold5": line2,
+          "from-gold4 via-gold2 to-gold5": line3,
+        })}
       ></div>
     </div>
   );

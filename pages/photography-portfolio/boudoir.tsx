@@ -1,8 +1,8 @@
 import ContentPadding from "../../components/content-padding";
 import Heading, { HeadingVariant } from "../../components/heading";
-import ThumbnailSlideshow from "../../components/slideshow/thumbnail-slideshow";
 import Head from "next/head";
 import boudoirSlideshow from "../../data/boudoir-slideshow.json";
+import Slideshow from "../../components/slideshow";
 
 interface Props {
   title: string;
@@ -19,7 +19,7 @@ const Boudoir = ({ content, title }: Props) => {
       <ContentPadding>
         <Heading variant={HeadingVariant.PageHeading}>Boudoir</Heading>
       </ContentPadding>
-      <ThumbnailSlideshow imageList={boudoirSlideshow} />
+      <Slideshow thumbnails={true} imageList={boudoirSlideshow} />
     </>
   );
 };
