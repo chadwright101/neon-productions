@@ -33,6 +33,7 @@ const Header = () => {
             className="h-full w-44 py-1 desktop:w-60"
             src={logo}
             alt="Neon Productions logo"
+            priority
           />
         </Link>
       </div>

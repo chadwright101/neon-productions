@@ -55,8 +55,8 @@ const Slideshow = ({
                 src={item.src}
                 alt={item.alt}
                 loading={lazy ? "lazy" : "eager"}
-                width={1000}
-                height={500}
+                width={906}
+                height={604}
                 priority={priority ? true : false}
               />
             </div>
@@ -90,8 +90,8 @@ const Slideshow = ({
                     src={item.src}
                     alt={item.alt}
                     loading={lazy ? "lazy" : "eager"}
-                    width={200}
-                    height={200}
+                    width={110}
+                    height={110}
                     priority={priority ? true : false}
                   />
                 </div>
