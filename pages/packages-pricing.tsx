@@ -6,12 +6,7 @@ import Head from "next/head";
 import package1 from "../public/packages/Newborn Packages 2022.webp";
 import package2 from "../public/packages/20220814_133226_0000.webp";
 
-interface Props {
-  title: string;
-  content: string;
-}
-
-const PackagesPricing = ({ title, content }: Props) => {
+const PackagesPricing = () => {
   return (
     <main>
       <Head>

@@ -3,13 +3,11 @@ import ContentPadding from "../components/content-padding";
 import GoldLine from "../components/gold-line";
 import Heading, { HeadingVariant } from "../components/heading";
 import Head from "next/head";
+import dressHire1 from "../public/dress hire/20220613_144947_0000.webp";
+import dressHire2 from "../public/dress hire/20220605_112329_0000.webp";
+import dressHire3 from "../public/dress hire/png_20220613_100701_0000.webp";
 
-interface Props {
-  title: string;
-  content: string;
-}
-
-const DressHire = ({ title, content }: Props) => {
+const DressHire = () => {
   return (
     <ContentPadding>
       <Head>
@@ -25,17 +23,11 @@ const DressHire = ({ title, content }: Props) => {
         <div className="grid justify-items-center gap-8 desktop:grid-cols-2">
           <Image
             className="col-span-full"
-            src="/dress hire/20220613_144947_0000.webp"
+            src={dressHire1}
             alt="Dress hire examples"
           />
-          <Image
-            src="/dress hire/20220605_112329_0000.webp"
-            alt="Dress hire article"
-          />
-          <Image
-            src="/dress hire/png_20220613_100701_0000.webp"
-            alt="Dress photography shoot special"
-          />
+          <Image src={dressHire3} alt="Dress hire article" />
+          <Image src={dressHire2} alt="Dress photography shoot special" />
         </div>
         <GoldLine horizontal line2 classes="mt-12 desktop:mt-16" />
       </main>

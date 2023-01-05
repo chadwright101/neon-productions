@@ -8,12 +8,7 @@ import photographyPortfolioSlideshow from "../../data/photography-portfolio-slid
 import photographyPortfolioCollage from "../../data/photography-portfolio-collage.json";
 import Slideshow from "../../components/slideshow";
 
-interface Props {
-  title: string;
-  content: string;
-}
-
-const PhotographyPortfolio = ({ title, content }: Props) => {
+const PhotographyPortfolio = () => {
   return (
     <>
       <Head>
@@ -37,7 +32,7 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
           />
         </ContentPadding>
         <Slideshow
-          classes={true}
+          desktopHidden={true}
           imageList={photographyPortfolioSlideshow.newborn}
         />
         <ContentPadding>
@@ -52,7 +47,7 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
           />
         </ContentPadding>
         <Slideshow
-          classes={true}
+          desktopHidden={true}
           lazy={true}
           imageList={photographyPortfolioSlideshow.lifestyle}
         />
@@ -67,7 +62,7 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
           />
         </ContentPadding>
         <Slideshow
-          classes={true}
+          desktopHidden={true}
           lazy={true}
           imageList={photographyPortfolioSlideshow.boudoir}
         />
@@ -82,7 +77,7 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
           />
         </ContentPadding>
         <Slideshow
-          classes={true}
+          desktopHidden={true}
           lazy={true}
           imageList={photographyPortfolioSlideshow.corporate}
         />

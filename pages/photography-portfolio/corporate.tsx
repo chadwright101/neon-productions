@@ -4,12 +4,7 @@ import Head from "next/head";
 import corporateSlideshow from "../../data/corporate-slideshow.json";
 import Slideshow from "../../components/slideshow";
 
-interface Props {
-  title: string;
-  content: string;
-}
-
-const Corporate = ({ title, content }: Props) => {
+const Corporate = () => {
   return (
     <>
       <Head>

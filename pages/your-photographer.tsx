@@ -6,6 +6,14 @@ import Head from "next/head";
 import { useState } from "react";
 import Link from "next/link";
 import vendorList from "../data/vendor-list.json";
+import morgan1 from "../public/your-photographer/morgan1.webp";
+import morgan2 from "../public/your-photographer/morgan2.webp";
+import morgan3 from "../public/your-photographer/morgan3.webp";
+import morgan4 from "../public/your-photographer/morgan4.webp";
+import collage1 from "../public/portfolio/lifestyle/page/lifestyle-page-30.webp";
+import collage2 from "../public/portfolio/corporate/page/corporate-page-43.webp";
+import collage3 from "../public/portfolio/boudoir/page/boudoir-page-5.webp";
+import collage4 from "../public/portfolio/newborn/page/newborn-page-26.webp";
 
 interface Props {
   title: string;
@@ -19,7 +27,7 @@ const YourPhotographer = ({ title, content }: Props) => {
   const [newbornHover, setNewbornHover] = useState(false);
   const imageList = [
     {
-      src: "/portfolio/lifestyle/page/lifestyle-page-30.webp",
+      src: collage1,
       alt: "Lifestyle photography from Neon Productions",
       classes: "collage-1",
       title: "Lifestyle",
@@ -30,7 +38,7 @@ const YourPhotographer = ({ title, content }: Props) => {
       hover: lifestyleHover,
     },
     {
-      src: "/portfolio/corporate/page/corporate-page-43.webp",
+      src: collage2,
       alt: "Corporate photography from Neon Productions",
       classes: "collage-2",
       title: "Corporate",
@@ -41,7 +49,7 @@ const YourPhotographer = ({ title, content }: Props) => {
       hover: corporateHover,
     },
     {
-      src: "/portfolio/boudoir/page/boudoir-page-5.webp",
+      src: collage3,
       alt: "Boudoir photography from Neon Productions",
       classes: "collage-3",
       title: "Boudoir",
@@ -51,7 +59,7 @@ const YourPhotographer = ({ title, content }: Props) => {
       hover: boudoirHover,
     },
     {
-      src: "/portfolio/newborn/page/newborn-page-26.webp",
+      src: collage4,
       alt: "Newborn photography from Neon Productions",
       classes: "collage-4",
       title: "Newborn",
@@ -83,22 +91,22 @@ const YourPhotographer = ({ title, content }: Props) => {
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <Image
               className="object-cover h-[245px] w-[360px]"
-              src="/your-photographer/morgan4.webp"
+              src={morgan4}
               alt=""
             />
             <Image
               className=" object-cover h-[245px] w-[190px]"
-              src="/your-photographer/morgan1.webp"
+              src={morgan1}
               alt=""
             />
             <Image
               className="hidden desktop:block object-cover h-[245px] w-[190px]"
-              src="/your-photographer/morgan3.webp"
+              src={morgan3}
               alt=""
             />
             <Image
               className="object-cover h-[245px] w-[190px]"
-              src="/your-photographer/morgan2.webp"
+              src={morgan2}
               alt=""
             />
           </div>
@@ -139,7 +147,7 @@ const YourPhotographer = ({ title, content }: Props) => {
         <article className="hidden desktop:block">
           <GoldLine horizontal line2 classes=" my-4 desktop:my-12" />
           <div className="your-photographer-collage hidden desktop:grid">
-            {imageList.map((item, index) => (
+            {imageList.map((item: any, index) => (
               <div
                 key={index}
                 className={item.classes}
@@ -176,6 +184,8 @@ const YourPhotographer = ({ title, content }: Props) => {
                   src={item.src}
                   alt={item.alt}
                   loading="lazy"
+                  width={1000}
+                  height={500}
                 />
                 <p className={item.classes}>
                   <span className="font-bold">{item.line1}</span>

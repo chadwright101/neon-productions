@@ -4,12 +4,7 @@ import Head from "next/head";
 import newbornSlideshow from "../../data/newborn-slideshow.json";
 import Slideshow from "../../components/slideshow";
 
-interface Props {
-  title: string;
-  content: string;
-}
-
-const Newborn = ({ title, content }: Props) => {
+const Newborn = () => {
   return (
     <>
       <Head>

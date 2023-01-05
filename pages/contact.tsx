@@ -2,13 +2,14 @@ import Image from "next/image";
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import Head from "next/head";
+import instagramIcon from "../public/graphics/instagram.webp";
+import facebookIcon from "../public/graphics/facebook.webp";
+import pinterestIcon from "../public/graphics/pinterest.webp";
+import emailIcon from "../public/graphics/Untitled-zdfgbc.webp";
+import phoneIcon from "../public/graphics/dxhfg.webp";
+import morgan from "../public/contact/bts (2).webp";
 
-interface Props {
-  title: string;
-  content: string;
-}
-
-const Contact = ({ title, content }: Props) => {
+const Contact = () => {
   return (
     <ContentPadding>
       <Head>
@@ -25,7 +26,7 @@ const Contact = ({ title, content }: Props) => {
             <li className="flex gap-4 items-center font-light">
               <Image
                 className="w-12 h-full"
-                src="/graphics/Untitled-zdfgbc.webp"
+                src={emailIcon}
                 alt="Email address icon"
               />
               <a
@@ -38,7 +39,7 @@ const Contact = ({ title, content }: Props) => {
             <li className="flex gap-4 items-center font-light">
               <Image
                 className="w-12 h-full"
-                src="/graphics/dxhfg.webp"
+                src={phoneIcon}
                 alt="Phone number icon"
               />
               <a className="hover:desktop:underline" href="tel:+27827728980">
@@ -56,7 +57,7 @@ const Contact = ({ title, content }: Props) => {
               >
                 <Image
                   className="w-12 h-full"
-                  src="/graphics/instagram.webp"
+                  src={instagramIcon}
                   alt="Instagram logo"
                 />
               </a>
@@ -78,7 +79,7 @@ const Contact = ({ title, content }: Props) => {
               >
                 <Image
                   className="w-12 h-full"
-                  src="/graphics/Facebook.webp"
+                  src={facebookIcon}
                   alt="Facebook logo"
                 />
               </a>
@@ -100,7 +101,7 @@ const Contact = ({ title, content }: Props) => {
               >
                 <Image
                   className="w-12 h-full"
-                  src="/graphics/Pinterest.webp"
+                  src={pinterestIcon}
                   alt="Pinterest logo"
                 />
               </a>
@@ -118,7 +119,7 @@ const Contact = ({ title, content }: Props) => {
 
         <Image
           className="w-[750px] h-[700px] object-cover mt-12 desktop:w-[350px] desktop:h-[370px] -translate-y-12"
-          src="/contact/bts (2).webp"
+          src={morgan}
           alt="Morgan on location at a photoshoot"
         />
       </main>

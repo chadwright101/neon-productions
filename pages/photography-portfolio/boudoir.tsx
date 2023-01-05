@@ -1,8 +1,8 @@
 import ContentPadding from "../../components/content-padding";
 import Heading, { HeadingVariant } from "../../components/heading";
 import Head from "next/head";
-import testImages from "../../data/images2.js";
-import Slideshow from "../../components/slideshow";
+import boudoirImages from "../../data/boudoir-slideshow";
+import Slideshow from "../../components/slideshow-new";
 
 const Boudoir = () => {
   return (
@@ -17,7 +17,7 @@ const Boudoir = () => {
       <ContentPadding>
         <Heading variant={HeadingVariant.PageHeading}>Boudoir</Heading>
       </ContentPadding>
-      <Slideshow thumbnails={true} imageList={testImages} />
+      <Slideshow thumbnails={true} imageList={boudoirImages} />
     </>
   );
 };

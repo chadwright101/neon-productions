@@ -19,6 +19,8 @@ const Collage = ({ imageList, classes, lazy }: Props) => {
           src={item.src}
           alt={item.alt}
           loading={lazy ? "lazy" : "eager"}
+          width={1000}
+          height={500}
         />
       ))}
     </div>

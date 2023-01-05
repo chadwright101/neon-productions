@@ -4,13 +4,13 @@ import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import homeSlideImages from "../data/home-slideshow.json";
 import Slideshow from "../components/slideshow";
+import peonies from "../public/general/peonies-background-tumblr-7.webp";
+import morgan1 from "../public/your-photographer/morgan1.webp";
+import morgan2 from "../public/your-photographer/morgan2.webp";
+import morgan3 from "../public/your-photographer/morgan3.webp";
+import morgan4 from "../public/your-photographer/morgan4.webp";
 
-interface Props {
-  title: string;
-  content: string;
-}
-
-export default function Home({ title, content }: Props) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -24,7 +24,7 @@ export default function Home({ title, content }: Props) {
 
       <Image
         className="w-[800px] h-full m-auto object-cover"
-        src="/general/peonies-background-tumblr-7.webp"
+        src={peonies}
         alt="A bunch of pink flowers"
       />
       <Slideshow imageList={homeSlideImages} objectFit={true} />
@@ -40,25 +40,25 @@ export default function Home({ title, content }: Props) {
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <Image
               className="object-cover h-[245px] w-[360px]"
-              src="/your-photographer/morgan4.webp"
+              src={morgan4}
               alt=""
               loading="lazy"
             />
             <Image
               className=" object-cover h-[245px] w-[190px]"
-              src="/your-photographer/morgan1.webp"
+              src={morgan1}
               alt=""
               loading="lazy"
             />
             <Image
               className="hidden desktop:block object-cover h-[245px] w-[190px]"
-              src="/your-photographer/morgan3.webp"
+              src={morgan3}
               alt=""
               loading="lazy"
             />
             <Image
               className="object-cover h-[245px] w-[190px]"
-              src="/your-photographer/morgan2.webp"
+              src={morgan2}
               alt=""
               loading="lazy"
             />
