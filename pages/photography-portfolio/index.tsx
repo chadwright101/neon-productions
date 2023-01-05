@@ -35,7 +35,6 @@ const PhotographyPortfolio = () => {
         <Slideshow
           desktopHidden={true}
           imageList={photographyPortfolioSlideshow.newborn}
-          priority
         />
         <ContentPadding>
           <Button href="/photography-portfolio/newborn" />

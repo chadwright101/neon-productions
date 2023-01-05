@@ -17,7 +17,7 @@ const Lifestyle = () => {
       <ContentPadding>
         <Heading variant={HeadingVariant.PageHeading}>Lifestyle</Heading>
       </ContentPadding>
-      <Slideshow thumbnails={true} imageList={lifestyleSlideshow} priority />
+      <Slideshow thumbnails={true} imageList={lifestyleSlideshow} />
     </>
   );
 };

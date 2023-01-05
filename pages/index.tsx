@@ -27,7 +27,7 @@ export default function Home() {
         src={peonies}
         alt="A bunch of pink flowers"
       />
-      <Slideshow imageList={homeSlideImages} objectFit={true} priority />
+      <Slideshow imageList={homeSlideImages} objectFit={true} />
       <ContentPadding>
         <main className="desktop:hidden home-your-photographer">
           <Heading variant={HeadingVariant.Subheading}>
