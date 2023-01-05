@@ -14,8 +14,11 @@ export default function Home({ title, content }: Props) {
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={content} />
+        <title>Home - Neon Productions</title>
+        <meta
+          name="description"
+          content="Newborn, lifestyle, boudoir and corporate photography from Neon Productions"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

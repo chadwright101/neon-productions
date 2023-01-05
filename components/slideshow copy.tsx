@@ -6,7 +6,7 @@ import GoldLine from "./gold-line";
 import "@splidejs/react-splide/css";
 
 interface Props {
-  imageList: any;
+  imageList: Array<{ src: string; alt: string }>;
   thumbnails?: boolean;
   classes?: boolean;
   lazy?: boolean;
@@ -43,21 +43,56 @@ const Slideshow = ({
           autoplay: true,
         }}
       >
-        {imageList.map((item: any, index: any) => (
+        {imageList.map((item, index) => (
           <SplideSlide key={index}>
             <div className="w-full bg-white h-full flex justify-center">
               <Image
                 className={`w-full h-[450px] tablet:h-[520px] desktop:h-[580px] ${
                   objectFit ? "object-cover" : "object-contain"
                 }`}
-                src={item}
-                alt="hello"
+                src={item.src}
+                alt={item.alt}
                 loading={lazy ? "lazy" : "eager"}
               />
             </div>
           </SplideSlide>
         ))}
       </Splide>
+      {thumbnails && (
+        <div className="hidden desktop:block">
+          {/* Thumbnail slider */}
+          <GoldLine width="w-[1000px]" classes="mt-8" horizontal line1 />
+          <Splide
+            className="w-[1000px] mx-auto"
+            options={{
+              type: "slide",
+              rewind: true,
+              pagination: false,
+              fixedWidth: 110,
+              fixedHeight: 110,
+              cover: true,
+              focus: "center",
+              snap: true,
+              arrows: false,
+            }}
+          >
+            {imageList.map((item, index) => (
+              <SplideSlide key={index}>
+                <div className="w-full bg-black h-full flex justify-center">
+                  <Image
+                    onClick={() => handleThumbs(index)}
+                    className="object-cover w-full h-36 hover:opacity-80 cursor-pointer"
+                    src={item.src}
+                    alt={item.alt}
+                    loading={lazy ? "lazy" : "eager"}
+                  />
+                </div>
+              </SplideSlide>
+            ))}
+          </Splide>
+          <GoldLine width="w-[1000px]" horizontal line2 />
+        </div>
+      )}
     </>
   );
 };

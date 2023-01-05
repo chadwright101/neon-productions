@@ -13,8 +13,11 @@ const Corporate = ({ title, content }: Props) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={content} />
+        <title>Corporate Photography - Neon Productions</title>
+        <meta
+          name="description"
+          content="Corporate photography by Neon Photography"
+        />
       </Head>
       <ContentPadding>
         <Heading variant={HeadingVariant.PageHeading}>Corporate</Heading>

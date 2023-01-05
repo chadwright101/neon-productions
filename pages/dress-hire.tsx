@@ -13,8 +13,11 @@ const DressHire = ({ title, content }: Props) => {
   return (
     <ContentPadding>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={content} />
+        <title>Dress Hire - Neon Productions</title>
+        <meta
+          name="description"
+          content="Dress hire options from Neon Productions"
+        />
       </Head>
       <main>
         <Heading variant={HeadingVariant.PageHeading}>Dress Hire</Heading>

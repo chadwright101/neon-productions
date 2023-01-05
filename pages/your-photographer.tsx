@@ -64,8 +64,11 @@ const YourPhotographer = ({ title, content }: Props) => {
   return (
     <ContentPadding>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={content} />
+        <title>Your Photographer - Neon Productions</title>
+        <meta
+          name="description"
+          content="Find out more about your photographer from Neon Productions"
+        />
       </Head>
       <div className="your-photographer hidden desktop:block">
         <main>

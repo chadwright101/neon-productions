@@ -12,8 +12,11 @@ const Contact = ({ title, content }: Props) => {
   return (
     <ContentPadding>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={content} />
+        <title>Contact - Neon Productions</title>
+        <meta
+          name="description"
+          content="Contact number and email for Neon Productions"
+        />
       </Head>
       <Heading variant={HeadingVariant.PageHeading}>Contact Me</Heading>
       <main className="flex flex-col gap-10 desktop:flex-row desktop:justify-between desktop:gap-0">
