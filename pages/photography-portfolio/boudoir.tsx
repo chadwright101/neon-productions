@@ -17,7 +17,7 @@ const Boudoir = () => {
       <ContentPadding>
         <Heading variant={HeadingVariant.PageHeading}>Boudoir</Heading>
       </ContentPadding>
-      <Slideshow thumbnails={true} priority imageList={boudoirSlideshow} />
+      <Slideshow thumbnails={true} imageList={boudoirSlideshow} />
     </>
   );
 };
