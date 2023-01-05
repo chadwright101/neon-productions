@@ -49,6 +49,7 @@ const FooterSocial = ({ classes }: Props) => {
             src="/graphics/Pinterest.webp"
             alt="Pinterest logo"
             loading="lazy"
+            
           />
         </a>
       </li>
