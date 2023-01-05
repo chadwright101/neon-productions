@@ -3,6 +3,8 @@ import Link from "next/link";
 import "animate.css";
 import menuItems from "../../data/menu-items.json";
 import Image from "next/image";
+import logo from "../../public/general/Neon-Photography-Logo.webp";
+import menuIcon from "../../public/graphics/hamburger-menu.svg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +31,7 @@ const Header = () => {
         <Link href="/">
           <Image
             className="h-full w-44 py-1 desktop:w-60"
-            src="/general/Neon-Photography-Logo.webp"
+            src={logo}
             alt="Neon Productions logo"
           />
         </Link>
@@ -43,7 +45,7 @@ const Header = () => {
       >
         <Image
           className="m-auto w-12 h-11"
-          src="/graphics/hamburger-menu.svg"
+          src={menuIcon}
           alt="Hamburger menu icon"
         />
       </div>

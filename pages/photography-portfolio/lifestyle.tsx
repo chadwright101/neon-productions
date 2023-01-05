@@ -13,8 +13,11 @@ const Lifestyle = ({ title, content }: Props) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={content} />
+        <title>Lifestyle Photography - Neon Productions</title>
+        <meta
+          name="description"
+          content="Lifestyle photography by Neon Photography"
+        />
       </Head>
       <ContentPadding>
         <Heading variant={HeadingVariant.PageHeading}>Lifestyle</Heading>

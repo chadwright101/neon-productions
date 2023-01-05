@@ -1,25 +1,23 @@
 import ContentPadding from "../../components/content-padding";
 import Heading, { HeadingVariant } from "../../components/heading";
 import Head from "next/head";
-import boudoirSlideshow from "../../data/boudoir-slideshow.json";
+import testImages from "../../data/images2.js";
 import Slideshow from "../../components/slideshow";
 
-interface Props {
-  title: string;
-  content: string;
-}
-
-const Boudoir = ({ content, title }: Props) => {
+const Boudoir = () => {
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={content} />
+        <title>Boudoir Photography - Neon Productions</title>
+        <meta
+          name="description"
+          content="Boudoir photography by Neon Photography"
+        />
       </Head>
       <ContentPadding>
         <Heading variant={HeadingVariant.PageHeading}>Boudoir</Heading>
       </ContentPadding>
-      <Slideshow thumbnails={true} imageList={boudoirSlideshow} />
+      <Slideshow thumbnails={true} imageList={testImages} />
     </>
   );
 };

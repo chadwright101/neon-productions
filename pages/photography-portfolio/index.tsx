@@ -17,8 +17,11 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={content} />
+        <title>Photography Portfolio - Neon Productions</title>
+        <meta
+          name="description"
+          content="Photography portfolio from Neon Photography"
+        />
       </Head>
       <main>
         <ContentPadding>
@@ -45,6 +48,7 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
           <Collage
             classes="hidden desktop:grid"
             imageList={photographyPortfolioCollage.lifestyle}
+            lazy={true}
           />
         </ContentPadding>
         <Slideshow
@@ -59,6 +63,7 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
           <Collage
             classes="hidden desktop:grid"
             imageList={photographyPortfolioCollage.boudoir}
+            lazy={true}
           />
         </ContentPadding>
         <Slideshow
@@ -73,6 +78,7 @@ const PhotographyPortfolio = ({ title, content }: Props) => {
           <Collage
             classes="hidden desktop:grid"
             imageList={photographyPortfolioCollage.corporate}
+            lazy={true}
           />
         </ContentPadding>
         <Slideshow

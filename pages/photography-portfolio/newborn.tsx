@@ -13,8 +13,11 @@ const Newborn = ({ title, content }: Props) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={content} />
+        <title>Newborn Photography - Neon Productions</title>
+        <meta
+          name="description"
+          content="Newborn photography by Neon Photography"
+        />
       </Head>
       <ContentPadding>
         <Heading variant={HeadingVariant.PageHeading}>Newborn</Heading>
