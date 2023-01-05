@@ -6,7 +6,7 @@ import GoldLine from "./gold-line";
 import "@splidejs/react-splide/css";
 
 interface Props {
-  imageList: any;
+  imageList: Array<{}>;
   thumbnails?: boolean;
   classes?: boolean;
   lazy?: boolean;
@@ -43,7 +43,7 @@ const Slideshow = ({
           autoplay: true,
         }}
       >
-        {imageList.map((item: any, index: any) => (
+        {imageList.map((item: any, index) => (
           <SplideSlide key={index}>
             <div className="w-full bg-white h-full flex justify-center">
               <Image
@@ -53,6 +53,7 @@ const Slideshow = ({
                 src={item}
                 alt="hello"
                 loading={lazy ? "lazy" : "eager"}
+                quality={1}
               />
             </div>
           </SplideSlide>
