@@ -6,9 +6,11 @@ const FooterContact = ({ classes }: Props) => {
   return (
     <div className={classes}>
       <ul className="text-md font-light flex flex-col gap-6 items-center desktop:text-sm desktop:items-start desktop:gap-0">
-        <h5 className="text-md font-bold desktop:text-sm desktop:mb-6">
-          Contact
-        </h5>
+        <li>
+          <h5 className="text-md font-bold desktop:text-sm desktop:mb-6">
+            Contact
+          </h5>
+        </li>
         <li className="desktop:mb-3">
           Email:{" "}
           <a
