@@ -1,4 +1,7 @@
 import Image from "next/image";
+import instagramIcon from "../../public/graphics/instagram.webp";
+import facebookIcon from "../../public/graphics/facebook.webp";
+import pinterestIcon from "../../public/graphics/pinterest.webp";
 
 interface Props {
   classes?: string;
@@ -16,7 +19,7 @@ const FooterSocial = ({ classes }: Props) => {
         >
           <Image
             className="w-12 h-full desktop:w-7"
-            src="/graphics/instagram.webp"
+            src={instagramIcon}
             alt="Instagram logo"
             loading="lazy"
           />
@@ -31,7 +34,7 @@ const FooterSocial = ({ classes }: Props) => {
         >
           <Image
             className="w-12 h-full desktop:w-7"
-            src="/graphics/Facebook.webp"
+            src={facebookIcon}
             alt="Facebook logo"
             loading="lazy"
           />
@@ -46,10 +49,9 @@ const FooterSocial = ({ classes }: Props) => {
         >
           <Image
             className="w-12 h-full desktop:w-7"
-            src="/graphics/Pinterest.webp"
+            src={pinterestIcon}
             alt="Pinterest logo"
             loading="lazy"
-            
           />
         </a>
       </li>
