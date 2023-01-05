@@ -17,7 +17,7 @@ const Corporate = () => {
       <ContentPadding>
         <Heading variant={HeadingVariant.PageHeading}>Corporate</Heading>
       </ContentPadding>
-      <Slideshow thumbnails={true} imageList={corporateSlideshow} />
+      <Slideshow thumbnails={true} imageList={corporateSlideshow} priority />
     </>
   );
 };

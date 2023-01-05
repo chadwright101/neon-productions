@@ -7,7 +7,7 @@ import "@splidejs/react-splide/css";
 
 interface Props {
   imageList: Array<{}>;
-  thumbnails?: boolean;
+  priority?: boolean;
   classes?: boolean;
   lazy?: boolean;
   objectFit?: boolean;
@@ -15,7 +15,7 @@ interface Props {
 
 const Slideshow = ({
   imageList,
-  thumbnails,
+  priority,
   classes,
   lazy,
   objectFit,
@@ -54,6 +54,7 @@ const Slideshow = ({
                 alt="hello"
                 loading={lazy ? "lazy" : "eager"}
                 quality={100}
+                priority={priority ? true : false}
               />
             </div>
           </SplideSlide>

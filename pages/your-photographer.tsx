@@ -93,21 +93,25 @@ const YourPhotographer = ({ title, content }: Props) => {
               className="object-cover h-[245px] w-[360px]"
               src={morgan4}
               alt=""
+              priority
             />
             <Image
               className=" object-cover h-[245px] w-[190px]"
               src={morgan1}
               alt=""
+              priority
             />
             <Image
               className="hidden desktop:block object-cover h-[245px] w-[190px]"
               src={morgan3}
               alt=""
+              priority
             />
             <Image
               className="object-cover h-[245px] w-[190px]"
               src={morgan2}
               alt=""
+              priority
             />
           </div>
           <p>
@@ -166,7 +170,13 @@ const YourPhotographer = ({ title, content }: Props) => {
                     </h4>
                   </Link>
                 )}
-                <Image src={item.src} alt={item.alt} loading="lazy" />
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  loading="lazy"
+                  width={250}
+                  height={500}
+                />
               </div>
             ))}
           </div>
@@ -184,8 +194,8 @@ const YourPhotographer = ({ title, content }: Props) => {
                   src={item.src}
                   alt={item.alt}
                   loading="lazy"
-                  width={1000}
-                  height={500}
+                  width={200}
+                  height={200}
                 />
                 <p className={item.classes}>
                   <span className="font-bold">{item.line1}</span>

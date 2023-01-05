@@ -22,10 +22,15 @@ const PackagesPricing = () => {
         </Heading>
         <GoldLine horizontal line1 classes="mb-8 desktop:mb-16" />
         <div>
-          <Image src={package1} alt="Newborn packages from Neon Productions" />
+          <Image
+            src={package1}
+            alt="Newborn packages from Neon Productions"
+            priority
+          />
           <Image
             src={package2}
             alt="Family photoshoot packages from Neon Productions"
+            loading="lazy"
           />
         </div>
       </ContentPadding>

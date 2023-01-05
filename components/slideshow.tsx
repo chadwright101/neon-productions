@@ -11,6 +11,7 @@ interface Props {
   desktopHidden?: boolean;
   lazy?: boolean;
   objectFit?: boolean;
+  priority?: boolean;
 }
 
 const Slideshow = ({
@@ -19,6 +20,7 @@ const Slideshow = ({
   desktopHidden,
   lazy,
   objectFit,
+  priority,
 }: Props) => {
   const mainRef = useRef<Splide>(null);
 
@@ -55,6 +57,7 @@ const Slideshow = ({
                 loading={lazy ? "lazy" : "eager"}
                 width={1000}
                 height={500}
+                priority={priority ? true : false}
               />
             </div>
           </SplideSlide>
@@ -87,7 +90,9 @@ const Slideshow = ({
                     src={item.src}
                     alt={item.alt}
                     loading={lazy ? "lazy" : "eager"}
-                    fill
+                    width={200}
+                    height={200}
+                    priority={priority ? true : false}
                   />
                 </div>
               </SplideSlide>

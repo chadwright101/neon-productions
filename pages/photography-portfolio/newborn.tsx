@@ -17,7 +17,7 @@ const Newborn = () => {
       <ContentPadding>
         <Heading variant={HeadingVariant.PageHeading}>Newborn</Heading>
       </ContentPadding>
-      <Slideshow thumbnails={true} imageList={newbornSlideshow} />
+      <Slideshow thumbnails={true} imageList={newbornSlideshow} priority />
     </>
   );
 };

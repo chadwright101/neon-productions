@@ -7,9 +7,10 @@ interface Props {
   }>;
   classes?: string;
   lazy?: boolean;
+  priority?: boolean;
 }
 
-const Collage = ({ imageList, classes, lazy }: Props) => {
+const Collage = ({ imageList, classes, lazy, priority }: Props) => {
   return (
     <div className={`collage ${classes}`}>
       {imageList.map((item, index) => (
@@ -21,6 +22,7 @@ const Collage = ({ imageList, classes, lazy }: Props) => {
           loading={lazy ? "lazy" : "eager"}
           width={1000}
           height={500}
+          priority={priority ? true : false}
         />
       ))}
     </div>

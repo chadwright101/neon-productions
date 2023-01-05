@@ -25,9 +25,14 @@ const DressHire = () => {
             className="col-span-full"
             src={dressHire1}
             alt="Dress hire examples"
+            priority
           />
-          <Image src={dressHire3} alt="Dress hire article" />
-          <Image src={dressHire2} alt="Dress photography shoot special" />
+          <Image loading="lazy" src={dressHire3} alt="Dress hire article" />
+          <Image
+            loading="lazy"
+            src={dressHire2}
+            alt="Dress photography shoot special"
+          />
         </div>
         <GoldLine horizontal line2 classes="mt-12 desktop:mt-16" />
       </main>
