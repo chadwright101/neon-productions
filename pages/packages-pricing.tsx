@@ -3,8 +3,8 @@ import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import GoldLine from "../components/gold-line";
 import Head from "next/head";
-import package1 from "../public/packages/Newborn Packages 2022.webp";
-import package2 from "../public/packages/20220814_133226_0000.webp";
+import package1 from "../public/packages/Newborn Packages 2022.jpg";
+import package2 from "../public/packages/20220814_133226_0000.png";
 
 const PackagesPricing = () => {
   return (

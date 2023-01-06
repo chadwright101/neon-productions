@@ -2,12 +2,12 @@ import Image from "next/image";
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import Head from "next/head";
-import instagramIcon from "../public/graphics/instagram.webp";
-import facebookIcon from "../public/graphics/Facebook.webp";
-import pinterestIcon from "../public/graphics/Pinterest.webp";
-import emailIcon from "../public/graphics/Untitled-zdfgbc.webp";
-import phoneIcon from "../public/graphics/dxhfg.webp";
-import morgan from "../public/contact/bts (2).webp";
+import instagramIcon from "../public/graphics/instagram.png";
+import facebookIcon from "../public/graphics/Facebook.png";
+import pinterestIcon from "../public/graphics/Pinterest.png";
+import emailIcon from "../public/graphics/Untitled-zdfgbc.png";
+import phoneIcon from "../public/graphics/dxhfg.png";
+import morgan from "../public/contact/bts (2).jpg";
 
 const Contact = () => {
   return (

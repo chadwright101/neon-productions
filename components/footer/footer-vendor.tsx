@@ -1,5 +1,5 @@
 import Image from "next/image";
-import vendorBadge from "../../public/general/ROCKSTAR_VENDOR_BADGE.webp";
+import vendorBadge from "../../public/general/ROCKSTAR_VENDOR_BADGE.png";
 
 interface Props {
   classes?: string;

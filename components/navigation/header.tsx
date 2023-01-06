@@ -3,7 +3,7 @@ import Link from "next/link";
 import "animate.css";
 import menuItems from "../../data/menu-items.json";
 import Image from "next/image";
-import logo from "../../public/general/Neon-Photography-Logo.webp";
+import logo from "../../public/general/neon-photography-logo.jpg";
 import menuIcon from "../../public/graphics/hamburger-menu.svg";
 
 const Header = () => {

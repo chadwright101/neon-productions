@@ -6,14 +6,14 @@ import Head from "next/head";
 import { useState } from "react";
 import Link from "next/link";
 import vendorList from "../data/vendor-list.json";
-import morgan1 from "../public/your-photographer/morgan1.webp";
-import morgan2 from "../public/your-photographer/morgan2.webp";
-import morgan3 from "../public/your-photographer/morgan3.webp";
-import morgan4 from "../public/your-photographer/morgan4.webp";
-import collage1 from "../public/portfolio/lifestyle/page/lifestyle-page-30.webp";
-import collage2 from "../public/portfolio/corporate/page/corporate-page-43.webp";
-import collage3 from "../public/portfolio/boudoir/page/boudoir-page-5.webp";
-import collage4 from "../public/portfolio/newborn/page/newborn-page-26.webp";
+import morgan1 from "../public/your-photographer/morgan1.jpg";
+import morgan2 from "../public/your-photographer/morgan2.jpg";
+import morgan3 from "../public/your-photographer/morgan3.jpg";
+import morgan4 from "../public/your-photographer/morgan4.jpg";
+import collage1 from "../public/portfolio/lifestyle/page/lifestyle-page-45.jpg";
+import collage2 from "../public/portfolio/corporate/page/corporate-page-43.jpg";
+import collage3 from "../public/portfolio/boudoir/page/boudoir-page-30.jpg";
+import collage4 from "../public/portfolio/newborn/page/newborn-page-13.jpg";
 
 interface Props {
   title: string;
