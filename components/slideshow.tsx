@@ -78,7 +78,7 @@ const Slideshow = ({
               cover: true,
               focus: "center",
               snap: true,
-              arrows: false,
+              arrows: true,
             }}
           >
             {imageList.map((item, index) => (
