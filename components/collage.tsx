@@ -3,7 +3,7 @@ interface Props {
   imageList: Array<{
     src: string;
     alt: string;
-    classes: string;
+    classes?: string;
   }>;
   classes?: string;
   lazy?: boolean;
