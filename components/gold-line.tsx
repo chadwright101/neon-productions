@@ -37,7 +37,6 @@ const GoldLine = ({
       ></div>
       <div
         className={classnames(`${classes}`, {
-          "h-full w-[2.5px] bg-gradient-to-t": vertical,
           "w-full h-[2.75px] desktop:h-[4px] bg-gradient-to-r": horizontal,
           "from-gold2 via-gold5 to-gold4": line1,
           "from-gold1 via-gold4 to-gold5": line2,
