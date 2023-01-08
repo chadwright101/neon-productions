@@ -43,7 +43,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        flowers: "url('/general/peonies-background-tumblr-7-2.webp')",
+        flowers: "url('/general/peonies-background-tumblr-7-2.jpg')",
         golden: "url('/general/gold.webp')",
       },
     },

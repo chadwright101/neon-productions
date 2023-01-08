@@ -18,7 +18,7 @@ const Footer = () => {
         <FooterVendor />
       </div>
       {/* Desktop footer */}
-      <div className="hidden desktop:flex desktop:justify-center gap-6 border-t border-t-black py-12 bg-flowers bg-no-repeat bg-center">
+      <div className="hidden desktop:flex desktop:justify-center gap-6 border-t border-t-black py-12 bg-flowers bg-no-repeat bg-center ">
         <FooterVendor />
         <div className="w-72">
           <h5 className="font-bold text-right mb-6 text-sm">Navigation</h5>
