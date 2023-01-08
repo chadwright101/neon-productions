@@ -165,9 +165,9 @@ const YourPhotographer = ({ title, content }: Props) => {
                       item.height || "h-[456px] overlay:h-[506px]"
                     } w-[290px] overlay:w-[323px] place-items-center`}
                   >
-                    <h4 className="text-[2.5rem] text-center px-4 uppercase">
+                    <h3 className="text-[2.75rem] text-center px-4 uppercase font-Acid">
                       {item.title} Photography
-                    </h4>
+                    </h3>
                   </Link>
                 )}
                 <Image
