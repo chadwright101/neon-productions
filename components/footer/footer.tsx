@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="hidden desktop:flex desktop:justify-center gap-6 border-t border-t-black py-12 bg-flowers bg-no-repeat bg-center ">
         <FooterVendor />
         <div className="w-72">
-          <h5 className="font-bold text-right mb-6 text-sm">Navigation</h5>
+          <h3 className="font-bold text-right mb-6 text-sm">Navigation</h3>
           <ul className="text-right font-light text-sm flex flex-col gap-3.5">
             {desktopFooterList.map((item, index) => (
               <li key={index}>
