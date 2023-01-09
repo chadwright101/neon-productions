@@ -3,8 +3,7 @@ import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import GoldLine from "../components/gold-line";
 import Head from "next/head";
-import package1 from "../public/packages/Newborn Packages 2022.jpg";
-import package2 from "../public/packages/20220814_133226_0000.png";
+import packagesImages from "../data/packages-images.json";
 
 const PackagesPricing = () => {
   return (
@@ -21,17 +20,27 @@ const PackagesPricing = () => {
           Packages & Pricing
         </Heading>
         <GoldLine horizontal line1 classes="mb-8 desktop:mb-16" />
-        <div>
+
+        {/* First image place here due to priority not working with lazy loading */}
+        <div className="flex flex-col gap-4">
           <Image
-            src={package1}
-            alt="Newborn packages from Neon Productions"
+            src="/packages/packages-jan-2023-1.png"
+            alt="Packages and pricing from Neon Productions"
+            width={1000}
+            height={800}
             priority
           />
-          <Image
-            src={package2}
-            alt="Family photoshoot packages from Neon Productions"
-            loading="lazy"
-          />
+
+          {packagesImages.map((item, index) => (
+            <Image
+              key={index}
+              src={item.src}
+              alt={item.alt}
+              loading={"lazy"}
+              width={1000}
+              height={800}
+            />
+          ))}
         </div>
       </ContentPadding>
     </main>
