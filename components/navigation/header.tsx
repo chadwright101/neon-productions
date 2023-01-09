@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import "animate.css";
 import menuItems from "../../data/menu-items.json";
@@ -9,21 +9,6 @@ import menuIcon from "../../public/graphics/hamburger-menu.svg";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
-
-  let menuRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    let handler = (e: any) => {
-      if (!menuRef.current?.contains(e.target)) {
-        setMenuOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-
-    return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  });
 
   return (
     <header>
@@ -51,10 +36,7 @@ const Header = () => {
         />
       </div>
       {menuOpen && (
-        <nav
-          ref={menuRef}
-          className="border-b border-black py-4 desktop:hidden overflow-hidden"
-        >
+        <nav className="border-b border-black py-4 desktop:hidden overflow-hidden">
           <ul className=" uppercase flex flex-col gap-2.5 items-center text-desktop tracking-tighter font-light text-md">
             {menuItems.map((item, index) => (
               <li className={item.classes} key={index}>
