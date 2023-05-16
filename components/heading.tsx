@@ -13,7 +13,7 @@ interface Props {
 const Heading = ({ children, variant }: Props) => {
   if (variant === HeadingVariant.PageHeading) {
     return (
-      <h1 className="text-[3.5rem] tablet:text-[3.75rem] desktop:text-[4rem] my-8 golden">
+      <h1 className="text-[3.49rem] tablet:text-[3.75rem] desktop:text-[4rem] my-8 golden">
         {children}
       </h1>
     );
