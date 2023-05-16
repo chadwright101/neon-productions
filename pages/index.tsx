@@ -4,11 +4,11 @@ import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import homeSlideImages from "../data/home-slideshow.json";
 import Slideshow from "../components/slideshow";
-import peonies from "../public/general/peonies-background-tumblr-7.jpg";
-import morgan1 from "../public/your-photographer/morgan1.jpg";
-import morgan2 from "../public/your-photographer/morgan2.jpg";
-import morgan3 from "../public/your-photographer/morgan3.jpg";
-import morgan4 from "../public/your-photographer/morgan4.jpg";
+import peonies from "../public/general/peonies-background-tumblr-7.webp";
+import morgan1 from "../public/your-photographer/morgan1.webp";
+import morgan2 from "../public/your-photographer/morgan2.webp";
+import morgan3 from "../public/your-photographer/morgan3.webp";
+import morgan4 from "../public/your-photographer/morgan4.webp";
 
 export default function Home() {
   return (

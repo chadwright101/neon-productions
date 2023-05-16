@@ -1,7 +1,7 @@
 import Image from "next/image";
-import instagramIcon from "../../public/graphics/instagram.png";
-import facebookIcon from "../../public/graphics/Facebook.png";
-import pinterestIcon from "../../public/graphics/Pinterest.png";
+import instagramIcon from "../../public/graphics/instagram.webp";
+import facebookIcon from "../../public/graphics/Facebook.webp";
+import pinterestIcon from "../../public/graphics/Pinterest.webp";
 
 interface Props {
   classes?: string;

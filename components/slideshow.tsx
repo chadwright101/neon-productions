@@ -54,10 +54,10 @@ const Slideshow = ({
                 }`}
                 src={item.src}
                 alt={item.alt}
-                loading={lazy ? "lazy" : "eager"}
+                loading={index < 2 ? "eager" : "lazy"}
                 width={906}
                 height={604}
-                priority={priority ? true : false}
+                quality={50}
               />
             </div>
           </SplideSlide>
@@ -89,10 +89,10 @@ const Slideshow = ({
                     className="object-cover w-full h-36 hover:opacity-80 cursor-pointer"
                     src={item.src}
                     alt={item.alt}
-                    loading={lazy ? "lazy" : "eager"}
+                    loading={index < 2 ? "eager" : "lazy"}
                     width={110}
                     height={110}
-                    priority={priority ? true : false}
+                    quality={50}
                   />
                 </div>
               </SplideSlide>

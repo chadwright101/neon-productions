@@ -8,4 +8,7 @@ module.exports = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    deviceSizes: [400, 750, 1250],
+  },
 };

@@ -20,25 +20,16 @@ const PackagesPricing = () => {
           Packages & Pricing
         </Heading>
         <GoldLine horizontal line1 classes="mb-8 desktop:mb-16" />
-
-        {/* First image place here due to priority not working with lazy loading */}
-        <div className="flex flex-col gap-4">
-          <Image
-            src="/packages/packages-jan-2023-1.png"
-            alt="Packages and pricing from Neon Productions"
-            width={1000}
-            height={800}
-            priority
-          />
-
+        <div className="flex flex-col gap-8">
           {packagesImages.map((item, index) => (
             <Image
               key={index}
               src={item.src}
-              alt={item.alt}
-              loading={"lazy"}
+              alt="Packages and pricing from Neon Productions"
+              loading={index < 2 ? "eager" : "lazy"}
               width={1000}
               height={800}
+              quality={50}
             />
           ))}
         </div>

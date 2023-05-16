@@ -1,6 +1,6 @@
 [
   {
-    "src": "/vendors/vendors7.jpg",
+    "src": "/vendors/vendors7.webp",
     "alt": "Fun Photos logo",
     "line1": "Fun Photos:",
     "line2": "Louise Kruger 084 584 5804",
@@ -8,7 +8,7 @@
     "line4": "www.funphotos.co.za"
   },
   {
-    "src": "/vendors/vendors6.png",
+    "src": "/vendors/vendors6.webp",
     "alt": "Dilightful Flowers logo",
     "line1": "Dilightful Flowers",
     "line2": "Tel- Dianne 082 371 5899",
@@ -17,32 +17,32 @@
     "line5": "Website - www.dilightfulflowers.co.za"
   },
   {
-    "src": "/vendors/vendors2.png",
+    "src": "/vendors/vendors2.webp",
     "alt": "Beauty and the Bump logo",
     "line1": "Beauty and the Bump",
     "line2": "Tasmin 0824883071"
   },
   {
-    "src": "/vendors/vendors1.jpg",
+    "src": "/vendors/vendors1.webp",
     "alt": "Buttercup Cakes logo",
     "line1": "Buttercup Cakes",
     "line2": "Brittney 0793531378"
   },
   {
-    "src": "/vendors/vendors3.jpg",
+    "src": "/vendors/vendors3.webp",
     "alt": "Real Brides logo",
     "line1": "Real Brides Magazine",
     "line2": "Stewart 0614904915"
   },
   {
-    "src": "/vendors/vendors8.jpg",
+    "src": "/vendors/vendors8.webp",
     "alt": "LMC logo",
     "line1": "LMC PR and Advertising",
     "line2": "Sonia Laverick 0827750878",
     "line3": "www.laverickmedia.co.za"
   },
   {
-    "src": "/vendors/vendors5.jpg",
+    "src": "/vendors/vendors5.webp",
     "alt": "Perfect Tone Music logo",
     "classes": "-ml-6",
     "line1": "Perfect Tone Music",
@@ -51,7 +51,7 @@
     "line4": "www.perfecttonemusic.co.za"
   },
   {
-    "src": "/vendors/vendors9.jpg",
+    "src": "/vendors/vendors9.webp",
     "alt": "Perfect Tone Music logo",
     "classes": "ml-6",
     "line1": "Urban Fusion Spa",
