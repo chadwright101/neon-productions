@@ -19,10 +19,10 @@ const Collage = ({ imageList, classes, lazy, priority }: Props) => {
           className={item.classes}
           src={item.src}
           alt={item.alt}
-          loading={lazy ? "lazy" : "eager"}
           width={1000}
           height={500}
-          priority={priority ? true : false}
+          loading={index < 2 ? "eager" : "lazy"}
+          quality={50}
         />
       ))}
     </div>
