@@ -9,6 +9,6 @@ module.exports = {
     defaultLocale: "en",
   },
   images: {
-    deviceSizes: [400, 750, 1250],
+    unoptimized: true,
   },
 };

@@ -18,9 +18,7 @@ const Slideshow = ({
   imageList,
   thumbnails,
   desktopHidden,
-  lazy,
   objectFit,
-  priority,
 }: Props) => {
   const mainRef = useRef<Splide>(null);
 

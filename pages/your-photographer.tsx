@@ -6,28 +6,15 @@ import Head from "next/head";
 import { useState } from "react";
 import Link from "next/link";
 import vendorList from "../data/vendor-list.json";
-import morgan1 from "../public/your-photographer/morgan1.webp";
-import morgan2 from "../public/your-photographer/morgan2.webp";
-import morgan3 from "../public/your-photographer/morgan3.webp";
-import morgan4 from "../public/your-photographer/morgan4.webp";
-import collage1 from "../public/portfolio/lifestyle/page/lifestyle-page-45.webp";
-import collage2 from "../public/portfolio/corporate/page/corporate-page-43.webp";
-import collage3 from "../public/portfolio/boudoir/page/boudoir-page-30.webp";
-import collage4 from "../public/portfolio/newborn/page/newborn-page-13.webp";
 
-interface Props {
-  title: string;
-  content: string;
-}
-
-const YourPhotographer = ({ title, content }: Props) => {
+const YourPhotographer = () => {
   const [lifestyleHover, setLifestyleHover] = useState(false);
   const [corporateHover, setCorporateHover] = useState(false);
   const [boudoirHover, setBoudoirHover] = useState(false);
   const [newbornHover, setNewbornHover] = useState(false);
   const imageList = [
     {
-      src: collage1,
+      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/lifestyle/page/lifestyle-page-45.jpg",
       alt: "Lifestyle photography from Neon Productions",
       classes: "collage-1",
       title: "Lifestyle",
@@ -38,7 +25,7 @@ const YourPhotographer = ({ title, content }: Props) => {
       hover: lifestyleHover,
     },
     {
-      src: collage2,
+      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/corporate/page/corporate-page-43.jpg",
       alt: "Corporate photography from Neon Productions",
       classes: "collage-2",
       title: "Corporate",
@@ -49,7 +36,7 @@ const YourPhotographer = ({ title, content }: Props) => {
       hover: corporateHover,
     },
     {
-      src: collage3,
+      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/boudoir/page/boudoir-page-30.jpg",
       alt: "Boudoir photography from Neon Productions",
       classes: "collage-3",
       title: "Boudoir",
@@ -59,7 +46,7 @@ const YourPhotographer = ({ title, content }: Props) => {
       hover: boudoirHover,
     },
     {
-      src: collage4,
+      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/newborn/page/newborn-page-13.jpg",
       alt: "Newborn photography from Neon Productions",
       classes: "collage-4",
       title: "Newborn",
@@ -91,27 +78,35 @@ const YourPhotographer = ({ title, content }: Props) => {
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <Image
               className="object-cover h-[245px] w-[360px]"
-              src={morgan4}
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan4.webp"
               alt=""
               priority
+              width={400}
+              height={300}
             />
             <Image
               className=" object-cover h-[245px] w-[190px]"
-              src={morgan1}
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan1.webp"
               alt=""
               priority
+              width={400}
+              height={300}
             />
             <Image
               className="hidden desktop:block object-cover h-[245px] w-[190px]"
-              src={morgan3}
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan3.webp"
               alt=""
               priority
+              width={400}
+              height={300}
             />
             <Image
               className="object-cover h-[245px] w-[190px]"
-              src={morgan2}
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan2.webp"
               alt=""
               priority
+              width={400}
+              height={300}
             />
           </div>
           <p>

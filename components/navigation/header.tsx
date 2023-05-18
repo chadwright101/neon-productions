@@ -3,7 +3,6 @@ import Link from "next/link";
 import "animate.css";
 import menuItems from "../../data/menu-items.json";
 import Image from "next/image";
-import logo from "../../public/general/neon-photography-logo.webp";
 import menuIcon from "../../public/graphics/hamburger-menu.svg";
 
 const Header = () => {
@@ -16,9 +15,11 @@ const Header = () => {
         <Link href="/">
           <Image
             className="h-full w-44 py-1 desktop:w-60"
-            src={logo}
+            src="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/neon-photography-logo.jpg"
             alt="Neon Productions logo"
             priority
+            width={200}
+            height={300}
           />
         </Link>
       </div>

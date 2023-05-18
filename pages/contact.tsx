@@ -2,12 +2,6 @@ import Image from "next/image";
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import Head from "next/head";
-import instagramIcon from "../public/graphics/instagram.webp";
-import facebookIcon from "../public/graphics/Facebook.webp";
-import pinterestIcon from "../public/graphics/Pinterest.webp";
-import emailIcon from "../public/graphics/Untitled-zdfgbc.webp";
-import phoneIcon from "../public/graphics/dxhfg.webp";
-import morgan from "../public/contact/bts (2).webp";
 
 const Contact = () => {
   return (
@@ -26,8 +20,10 @@ const Contact = () => {
             <li className="flex gap-4 items-center font-light">
               <Image
                 className="w-12 h-full"
-                src={emailIcon}
+                src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Untitled-zdfgbc.png"
                 alt="Email address icon"
+                width={100}
+                height={100}
               />
               <a
                 className="hover:desktop:underline"
@@ -39,8 +35,10 @@ const Contact = () => {
             <li className="flex gap-4 items-center font-light">
               <Image
                 className="w-12 h-full"
-                src={phoneIcon}
+                src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/dxhfg.png"
                 alt="Phone number icon"
+                width={100}
+                height={100}
               />
               <a className="hover:desktop:underline" href="tel:+27827728980">
                 +27 82 772 8980
@@ -57,8 +55,10 @@ const Contact = () => {
               >
                 <Image
                   className="w-12 h-full"
-                  src={instagramIcon}
+                  src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/instagram.png"
                   alt="Instagram logo"
+                  width={100}
+                  height={100}
                 />
               </a>
               <a
@@ -79,8 +79,10 @@ const Contact = () => {
               >
                 <Image
                   className="w-12 h-full"
-                  src={facebookIcon}
+                  src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Facebook.png"
                   alt="Facebook logo"
+                  width={100}
+                  height={100}
                 />
               </a>
               <a
@@ -101,8 +103,10 @@ const Contact = () => {
               >
                 <Image
                   className="w-12 h-full"
-                  src={pinterestIcon}
+                  src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Pinterest.png"
                   alt="Pinterest logo"
+                  width={100}
+                  height={100}
                 />
               </a>
               <a
@@ -119,8 +123,10 @@ const Contact = () => {
 
         <Image
           className="w-[750px] h-[700px] object-cover mt-12 desktop:w-[350px] desktop:h-[370px] -translate-y-12"
-          src={morgan}
+          src="https://ik.imagekit.io/thewrightdesigns/neon-productions/contact/bts (2).jpg"
           alt="Morgan on location at a photoshoot"
+          width={750}
+          height={700}
         />
       </main>
     </ContentPadding>

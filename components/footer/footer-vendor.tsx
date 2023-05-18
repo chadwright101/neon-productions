@@ -1,5 +1,4 @@
 import Image from "next/image";
-import vendorBadge from "../../public/general/ROCKSTAR_VENDOR_BADGE.webp";
 
 interface Props {
   classes?: string;
@@ -12,9 +11,11 @@ const FooterVendor = ({ classes }: Props) => {
     >
       <Image
         className="py-4 w-28 m-auto h-full desktop:w-56"
-        src={vendorBadge}
+        src="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/ROCKSTAR_VENDOR_BADGE.png"
         alt="Rockstar vendor badge"
         loading="lazy"
+        width={200}
+        height={250}
       />
     </div>
   );

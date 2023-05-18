@@ -4,11 +4,6 @@ import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import homeSlideImages from "../data/home-slideshow.json";
 import Slideshow from "../components/slideshow";
-import peonies from "../public/general/peonies-background-tumblr-7.webp";
-import morgan1 from "../public/your-photographer/morgan1.webp";
-import morgan2 from "../public/your-photographer/morgan2.webp";
-import morgan3 from "../public/your-photographer/morgan3.webp";
-import morgan4 from "../public/your-photographer/morgan4.webp";
 
 export default function Home() {
   return (
@@ -24,8 +19,10 @@ export default function Home() {
 
       <Image
         className="w-[800px] h-full m-auto object-cover"
-        src={peonies}
+        src="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/peonies-background-tumblr-7.jpg"
         alt="A bunch of pink flowers"
+        width={800}
+        height={300}
       />
       <Slideshow imageList={homeSlideImages} objectFit={true} />
       <ContentPadding>
@@ -40,27 +37,35 @@ export default function Home() {
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <Image
               className="object-cover h-[245px] w-[360px]"
-              src={morgan4}
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan4.webp"
               alt=""
               loading="lazy"
+              width={400}
+              height={300}
             />
             <Image
               className=" object-cover h-[245px] w-[190px]"
-              src={morgan1}
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan1.webp"
               alt=""
               loading="lazy"
+              width={400}
+              height={300}
             />
             <Image
               className="hidden desktop:block object-cover h-[245px] w-[190px]"
-              src={morgan3}
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan3.webp"
               alt=""
               loading="lazy"
+              width={400}
+              height={300}
             />
             <Image
               className="object-cover h-[245px] w-[190px]"
-              src={morgan2}
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan2.webp"
               alt=""
               loading="lazy"
+              width={400}
+              height={300}
             />
           </div>
           <p>

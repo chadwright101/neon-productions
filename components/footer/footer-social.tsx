@@ -1,7 +1,4 @@
 import Image from "next/image";
-import instagramIcon from "../../public/graphics/instagram.webp";
-import facebookIcon from "../../public/graphics/Facebook.webp";
-import pinterestIcon from "../../public/graphics/Pinterest.webp";
 
 interface Props {
   classes?: string;
@@ -18,10 +15,12 @@ const FooterSocial = ({ classes }: Props) => {
           rel="noreferrer"
         >
           <Image
-            className="w-12 h-full desktop:w-7"
-            src={instagramIcon}
+            className="w-12 h-auto desktop:w-7"
+            src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/instagram.png"
             alt="Instagram logo"
             loading="lazy"
+            width={100}
+            height={100}
           />
         </a>
       </li>
@@ -33,10 +32,12 @@ const FooterSocial = ({ classes }: Props) => {
           rel="noreferrer"
         >
           <Image
-            className="w-12 h-full desktop:w-7"
-            src={facebookIcon}
+            className="w-[45px] h-auto desktop:w-[26px]"
+            src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Facebook.png"
             alt="Facebook logo"
             loading="lazy"
+            width={100}
+            height={100}
           />
         </a>
       </li>
@@ -48,10 +49,12 @@ const FooterSocial = ({ classes }: Props) => {
           rel="noreferrer"
         >
           <Image
-            className="w-12 h-full desktop:w-7"
-            src={pinterestIcon}
+            className="w-12 h-auto desktop:w-7"
+            src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Pinterest.png"
             alt="Pinterest logo"
             loading="lazy"
+            width={100}
+            height={100}
           />
         </a>
       </li>
