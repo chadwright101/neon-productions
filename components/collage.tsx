@@ -1,4 +1,3 @@
-import Image from "next/image";
 interface Props {
   imageList: Array<{
     src: string;
@@ -6,24 +5,20 @@ interface Props {
     classes?: string;
   }>;
   classes?: string;
-  lazy?: boolean;
-  priority?: boolean;
 }
 
-const Collage = ({ imageList, classes, lazy, priority }: Props) => {
+const Collage = ({ imageList, classes }: Props) => {
   return (
     <div className={`collage ${classes}`}>
-      {imageList.map((item, index) => (
-        <Image
-          key={index}
-          className={item.classes}
-          src={item.src}
-          alt={item.alt}
-          width={1000}
-          height={500}
-          loading={index < 2 ? "eager" : "lazy"}
-          quality={50}
-        />
+      {imageList.map(({ src, alt, classes }, index) => (
+        <picture className={classes} key={index}>
+          <source srcSet={`${src}?tr=w-260`} media="(max-width: 1249px)" />
+          <img
+            src={`${src}?tr=w-300`}
+            alt={alt}
+            loading={index < 2 ? "eager" : "lazy"}
+          />
+        </picture>
       ))}
     </div>
   );

@@ -16,14 +16,17 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Image
-        className="w-[800px] h-full m-auto object-cover"
-        src="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/peonies-background-tumblr-7.jpg"
-        alt="A bunch of pink flowers"
-        width={800}
-        height={300}
-      />
+      <picture>
+        <source
+          srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/peonies-background-tumblr-7.jpg?tr=w-500"
+          media="(max-width: 500px)"
+        />
+        <img
+          src="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/peonies-background-tumblr-7.jpg?tr=w-800"
+          className="w-[800px] h-full m-auto object-cover"
+          alt="A bunch of pink flowers"
+        />
+      </picture>
       <Slideshow imageList={homeSlideImages} objectFit={true} />
       <ContentPadding>
         <main className="desktop:hidden home-your-photographer">

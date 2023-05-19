@@ -19,7 +19,7 @@ const Contact = () => {
           <ul className="flex flex-col gap-8 text-md desktop:text-lg">
             <li className="flex gap-4 items-center font-light">
               <Image
-                className="w-12 h-full"
+                className="hidden tablet:block w-12 h-full"
                 src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Untitled-zdfgbc.png"
                 alt="Email address icon"
                 width={100}
@@ -34,7 +34,7 @@ const Contact = () => {
             </li>
             <li className="flex gap-4 items-center font-light">
               <Image
-                className="w-12 h-full"
+                className="hidden tablet:block w-12 h-full"
                 src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/dxhfg.png"
                 alt="Phone number icon"
                 width={100}
@@ -46,15 +46,15 @@ const Contact = () => {
             </li>
           </ul>
           <ul className="mt-8 flex gap-8 text-lg font-light desktop:flex-col">
-            <li className="flex gap-4 items-center">
+            <li className="flex gap-4 items-center -translate-x-1">
               <a
-                className="desktop:hover:opacity-75"
+                className=" desktop:hover:opacity-75"
                 href="https://www.instagram.com/neonproductionssa/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Image
-                  className="w-12 h-full"
+                  className="w-[53px] h-full"
                   src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/instagram.png"
                   alt="Instagram logo"
                   width={100}
@@ -78,7 +78,7 @@ const Contact = () => {
                 rel="noreferrer"
               >
                 <Image
-                  className="w-12 h-full"
+                  className="w-[43px] h-full"
                   src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Facebook.png"
                   alt="Facebook logo"
                   width={100}
@@ -120,14 +120,21 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-
-        <Image
-          className="w-[750px] h-[700px] object-cover mt-12 desktop:w-[350px] desktop:h-[370px] -translate-y-12"
-          src="https://ik.imagekit.io/thewrightdesigns/neon-productions/contact/bts (2).jpg"
-          alt="Morgan on location at a photoshoot"
-          width={750}
-          height={700}
-        />
+        <picture>
+          <source
+            srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/contact/bts2.jpg?tr=h-500"
+            media="(max-width: 500px)"
+          />
+          <source
+            srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/contact/bts2.jpg?tr=w-750"
+            media="(max-width: 1000px)"
+          />
+          <img
+            src="https://ik.imagekit.io/thewrightdesigns/neon-productions/contact/bts2.jpg?tr=w-350"
+            alt="Morgan on location at a photoshoot"
+            className="w-[750px] h-[500px] object-cover mt-12 desktop:w-[350px] desktop:h-[370px] -translate-y-12"
+          />
+        </picture>
       </main>
     </ContentPadding>
   );

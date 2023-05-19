@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ContentPadding from "../components/content-padding";
 import GoldLine from "../components/gold-line";
 import Heading, { HeadingVariant } from "../components/heading";
@@ -18,28 +17,54 @@ const DressHire = () => {
         <Heading variant={HeadingVariant.PageHeading}>Dress Hire</Heading>
         <GoldLine horizontal line1 classes=" mb-8 desktop:mb-16" />
         <div className="grid justify-items-center gap-8 desktop:grid-cols-2">
-          <Image
-            className="col-span-full"
-            src="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress hire/20220613_144947_0000.jpg"
-            alt="Dress hire examples"
-            priority
-            width={1200}
-            height={1500}
-          />
-          <Image
-            loading="lazy"
-            src="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress hire/png_20220613_100701_0000.jpg"
-            alt="Dress hire article"
-            width={1200}
-            height={1500}
-          />
-          <Image
-            loading="lazy"
-            src="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress hire/20220605_112329_0000.jpg"
-            alt="Dress photography shoot special"
-            width={1200}
-            height={1500}
-          />
+          <picture>
+            <source
+              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220613_144947_0000.jpg?tr=w-440"
+              media="(max-width: 500px)"
+            />
+            <source
+              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220613_144947_0000.jpg?tr=w-690"
+              media="(max-width: 750px)"
+            />
+            <img
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220613_144947_0000.jpg?tr=w-1000"
+              className="col-span-full"
+              alt="Dress hire examples"
+              loading="eager"
+            />
+          </picture>
+          <picture>
+            <source
+              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/png_20220613_100701_0000.jpg?tr=w-440"
+              media="(max-width: 500px)"
+            />
+            <source
+              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/png_20220613_100701_0000.jpg?tr=w-690"
+              media="(max-width: 750px)"
+            />
+            <img
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/png_20220613_100701_0000.jpg?tr=w-1000"
+              className="col-span-full"
+              alt="Dress hire article"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <source
+              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220605_112329_0000.jpg?tr=w-440"
+              media="(max-width: 500px)"
+            />
+            <source
+              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220605_112329_0000.jpg?tr=w-690"
+              media="(max-width: 750px)"
+            />
+            <img
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220605_112329_0000.jpg?tr=w-1000"
+              className="col-span-full"
+              alt="Dress photography shoot special"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <GoldLine horizontal line2 classes="mt-12 desktop:mt-16" />
       </main>

@@ -14,7 +14,7 @@ const YourPhotographer = () => {
   const [newbornHover, setNewbornHover] = useState(false);
   const imageList = [
     {
-      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/lifestyle/page/lifestyle-page-45.jpg",
+      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/lifestyle/page/lifestyle-page-45.jpg?tr=w-350",
       alt: "Lifestyle photography from Neon Productions",
       classes: "collage-1",
       title: "Lifestyle",
@@ -25,7 +25,7 @@ const YourPhotographer = () => {
       hover: lifestyleHover,
     },
     {
-      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/corporate/page/corporate-page-43.jpg",
+      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/corporate/page/corporate-page-43.jpg?tr=w-350",
       alt: "Corporate photography from Neon Productions",
       classes: "collage-2",
       title: "Corporate",
@@ -36,7 +36,7 @@ const YourPhotographer = () => {
       hover: corporateHover,
     },
     {
-      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/boudoir/page/boudoir-page-30.jpg",
+      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/boudoir/page/boudoir-page-30.jpg?tr=w-350",
       alt: "Boudoir photography from Neon Productions",
       classes: "collage-3",
       title: "Boudoir",
@@ -46,7 +46,7 @@ const YourPhotographer = () => {
       hover: boudoirHover,
     },
     {
-      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/newborn/page/newborn-page-13.jpg",
+      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/newborn/page/newborn-page-13.jpg?tr=w-350",
       alt: "Newborn photography from Neon Productions",
       classes: "collage-4",
       title: "Newborn",
@@ -78,7 +78,7 @@ const YourPhotographer = () => {
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <Image
               className="object-cover h-[245px] w-[360px]"
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan4.webp"
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan4.webp?tr=w-380"
               alt=""
               priority
               width={400}
@@ -169,8 +169,8 @@ const YourPhotographer = () => {
                   src={item.src}
                   alt={item.alt}
                   loading="lazy"
-                  width={250}
-                  height={500}
+                  width={350}
+                  height={506}
                 />
               </div>
             ))}
@@ -182,29 +182,29 @@ const YourPhotographer = () => {
             Collaborative Vendors
           </Heading>
           <ul className="vendors">
-            {vendorList.map((item, index) => (
-              <li key={index}>
-                <Image
-                  className={item.classes}
-                  src={item.src}
-                  alt={item.alt}
-                  loading="lazy"
-                  width={200}
-                  height={200}
-                />
-                <p className={item.classes}>
-                  <span className="font-bold">{item.line1}</span>
-                  <br />
-                  {item.line2}
-                  <br />
-                  {item.line3}
-                  <br />
-                  {item.line4}
-                  <br />
-                  {item.line5}
-                </p>
-              </li>
-            ))}
+            {vendorList.map(
+              (
+                { classes, src, alt, line1, line2, line3, line4, line5 },
+                index
+              ) => (
+                <li key={index}>
+                  <picture className={classes} key={index}>
+                    <img src={`${src}?tr=w-315`} alt={alt} loading="lazy" />
+                  </picture>
+                  <p className={classes}>
+                    <span className="font-bold">{line1}</span>
+                    <br />
+                    {line2}
+                    <br />
+                    {line3}
+                    <br />
+                    {line4}
+                    <br />
+                    {line5}
+                  </p>
+                </li>
+              )
+            )}
           </ul>
         </article>
       </div>
