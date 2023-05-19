@@ -75,7 +75,7 @@ const DressHire = () => {
             <li key={index}>
               <a
                 className="py-2 text-blue desktop:hover:underline"
-                href={`/dress hire/catalogues/Neon Dress Catalogue Size ${item.size}.pdf`}
+                href={`https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/neon-productions/dress-hire/catalogues/Neon-Dress-Catalogue-Size-${item.size}.pdf`}
                 target="_blank"
                 rel="noreferrer"
               >
