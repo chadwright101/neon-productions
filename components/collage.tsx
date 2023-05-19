@@ -4,10 +4,11 @@ interface Props {
     alt: string;
     classes?: string;
   }>;
+  lazy?: boolean;
   classes?: string;
 }
 
-const Collage = ({ imageList, classes }: Props) => {
+const Collage = ({ imageList, classes, lazy }: Props) => {
   return (
     <div className={`collage ${classes}`}>
       {imageList.map(({ src, alt, classes }, index) => (
@@ -16,7 +17,7 @@ const Collage = ({ imageList, classes }: Props) => {
           <img
             src={`${src}?tr=w-300`}
             alt={alt}
-            loading={index < 2 ? "eager" : "lazy"}
+            loading={lazy ? "lazy" : "eager"}
           />
         </picture>
       ))}
