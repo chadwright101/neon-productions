@@ -48,9 +48,9 @@ const Slideshow = ({
               key={index}
               className="w-full bg-white h-full flex justify-center"
             >
-              <source srcSet={`${src}?tr=w-500`} media="(max-width: 450px)" />
-              <source srcSet={`${src}?tr=w-600`} media="(max-width: 550px)" />
-              <source srcSet={`${src}?tr=w-800`} media="(max-width: 750px)" />
+              <source srcSet={`${src}?tr=w-450`} media="(max-width: 450px)" />
+              <source srcSet={`${src}?tr=w-550`} media="(max-width: 550px)" />
+              <source srcSet={`${src}?tr=w-750`} media="(max-width: 750px)" />
               <img
                 src={`${src}?tr=w-1000`}
                 alt={alt}
@@ -88,20 +88,8 @@ const Slideshow = ({
                   className="w-full bg-black h-full flex justify-center"
                   onClick={() => handleThumbs(index)}
                 >
-                  <source
-                    srcSet={`${src}?tr=w-500`}
-                    media="(max-width: 450px)"
-                  />
-                  <source
-                    srcSet={`${src}?tr=w-600`}
-                    media="(max-width: 550px)"
-                  />
-                  <source
-                    srcSet={`${src}?tr=w-800`}
-                    media="(max-width: 750px)"
-                  />
                   <img
-                    src={`${src}?tr=w-1000`}
+                    src={`${src}?tr=w-175`}
                     alt={alt}
                     loading={index < 2 ? "eager" : "lazy"}
                     className="object-cover w-full h-[110px] hover:opacity-80 cursor-pointer"
