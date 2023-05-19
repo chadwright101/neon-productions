@@ -29,7 +29,6 @@ const PhotographyPortfolio = () => {
           <Collage
             classes="hidden desktop:grid"
             imageList={photographyPortfolioCollage.newborn}
-            priority
           />
         </ContentPadding>
         <Slideshow

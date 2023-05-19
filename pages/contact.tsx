@@ -2,12 +2,6 @@ import Image from "next/image";
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import Head from "next/head";
-import instagramIcon from "../public/graphics/instagram.webp";
-import facebookIcon from "../public/graphics/Facebook.webp";
-import pinterestIcon from "../public/graphics/Pinterest.webp";
-import emailIcon from "../public/graphics/Untitled-zdfgbc.webp";
-import phoneIcon from "../public/graphics/dxhfg.webp";
-import morgan from "../public/contact/bts (2).webp";
 
 const Contact = () => {
   return (
@@ -25,9 +19,11 @@ const Contact = () => {
           <ul className="flex flex-col gap-8 text-md desktop:text-lg">
             <li className="flex gap-4 items-center font-light">
               <Image
-                className="w-12 h-full"
-                src={emailIcon}
+                className="hidden tablet:block w-12 h-full"
+                src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Untitled-zdfgbc.png"
                 alt="Email address icon"
+                width={100}
+                height={100}
               />
               <a
                 className="hover:desktop:underline"
@@ -38,9 +34,11 @@ const Contact = () => {
             </li>
             <li className="flex gap-4 items-center font-light">
               <Image
-                className="w-12 h-full"
-                src={phoneIcon}
+                className="hidden tablet:block w-12 h-full"
+                src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/dxhfg.png"
                 alt="Phone number icon"
+                width={100}
+                height={100}
               />
               <a className="hover:desktop:underline" href="tel:+27827728980">
                 +27 82 772 8980
@@ -48,17 +46,19 @@ const Contact = () => {
             </li>
           </ul>
           <ul className="mt-8 flex gap-8 text-lg font-light desktop:flex-col">
-            <li className="flex gap-4 items-center">
+            <li className="flex gap-4 items-center -translate-x-1">
               <a
-                className="desktop:hover:opacity-75"
+                className=" desktop:hover:opacity-75"
                 href="https://www.instagram.com/neonproductionssa/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Image
-                  className="w-12 h-full"
-                  src={instagramIcon}
+                  className="w-[53px] h-full"
+                  src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/instagram.png"
                   alt="Instagram logo"
+                  width={100}
+                  height={100}
                 />
               </a>
               <a
@@ -78,9 +78,11 @@ const Contact = () => {
                 rel="noreferrer"
               >
                 <Image
-                  className="w-12 h-full"
-                  src={facebookIcon}
+                  className="w-[43px] h-full"
+                  src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Facebook.png"
                   alt="Facebook logo"
+                  width={100}
+                  height={100}
                 />
               </a>
               <a
@@ -101,8 +103,10 @@ const Contact = () => {
               >
                 <Image
                   className="w-12 h-full"
-                  src={pinterestIcon}
+                  src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Pinterest.png"
                   alt="Pinterest logo"
+                  width={100}
+                  height={100}
                 />
               </a>
               <a
@@ -116,12 +120,21 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-
-        <Image
-          className="w-[750px] h-[700px] object-cover mt-12 desktop:w-[350px] desktop:h-[370px] -translate-y-12"
-          src={morgan}
-          alt="Morgan on location at a photoshoot"
-        />
+        <picture>
+          <source
+            srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/contact/bts2.jpg?tr=h-500"
+            media="(max-width: 500px)"
+          />
+          <source
+            srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/contact/bts2.jpg?tr=w-750"
+            media="(max-width: 1000px)"
+          />
+          <img
+            src="https://ik.imagekit.io/thewrightdesigns/neon-productions/contact/bts2.jpg?tr=w-350"
+            alt="Morgan on location at a photoshoot"
+            className="w-[750px] h-[500px] object-cover mt-12 desktop:w-[350px] desktop:h-[370px] -translate-y-12"
+          />
+        </picture>
       </main>
     </ContentPadding>
   );

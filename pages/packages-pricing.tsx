@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ContentPadding from "../components/content-padding";
 import Heading, { HeadingVariant } from "../components/heading";
 import GoldLine from "../components/gold-line";
@@ -21,16 +20,16 @@ const PackagesPricing = () => {
         </Heading>
         <GoldLine horizontal line1 classes="mb-8 desktop:mb-16" />
         <div className="flex flex-col gap-8">
-          {packagesImages.map((item, index) => (
-            <Image
-              key={index}
-              src={item.src}
-              alt="Packages and pricing from Neon Productions"
-              loading={index < 2 ? "eager" : "lazy"}
-              width={1000}
-              height={800}
-              quality={50}
-            />
+          {packagesImages.map(({ src }, index) => (
+            <picture key={index}>
+              <source srcSet={`${src}?tr=w-440`} media="(max-width: 500px)" />
+              <source srcSet={`${src}?tr=w-690`} media="(max-width: 750px)" />
+              <img
+                src={`${src}?tr=w-1000`}
+                alt="Packages and pricing from Neon Productions"
+                loading={index < 2 ? "eager" : "lazy"}
+              />
+            </picture>
           ))}
         </div>
       </ContentPadding>

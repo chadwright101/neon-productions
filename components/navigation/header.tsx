@@ -1,10 +1,12 @@
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+
 import "animate.css";
-import menuItems from "../../data/menu-items.json";
-import Image from "next/image";
-import logo from "../../public/general/neon-photography-logo.webp";
+
 import menuIcon from "../../public/graphics/hamburger-menu.svg";
+
+import menuItems from "../../data/menu-items.json";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,12 +16,18 @@ const Header = () => {
     <header>
       <div className="grid place-items-center">
         <Link href="/">
-          <Image
-            className="h-full w-44 py-1 desktop:w-60"
-            src={logo}
-            alt="Neon Productions logo"
-            priority
-          />
+          <picture>
+            <source
+              media="(max-width: 1000px)"
+              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/neon-photography-logo.jpg?tr=w-180"
+            />
+            <img
+              className="h-full w-44 py-1 desktop:w-60"
+              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/neon-photography-logo.jpg?tr=w-250"
+              alt="Neon Productions logo"
+              loading="eager"
+            />
+          </picture>
         </Link>
       </div>
 
@@ -33,6 +41,8 @@ const Header = () => {
           className="m-auto w-12 h-11"
           src={menuIcon}
           alt="Hamburger menu icon"
+          width={48}
+          height={44}
         />
       </div>
       {menuOpen && (

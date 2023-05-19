@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRef } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import GoldLine from "./gold-line";
@@ -18,9 +17,7 @@ const Slideshow = ({
   imageList,
   thumbnails,
   desktopHidden,
-  lazy,
   objectFit,
-  priority,
 }: Props) => {
   const mainRef = useRef<Splide>(null);
 
@@ -45,21 +42,24 @@ const Slideshow = ({
           autoplay: true,
         }}
       >
-        {imageList.map((item, index) => (
+        {imageList.map(({ src, alt }, index) => (
           <SplideSlide key={index}>
-            <div className="w-full bg-white h-full flex justify-center">
-              <Image
-                className={`w-full h-[450px] tablet:h-[520px] desktop:h-[580px] ${
+            <picture
+              key={index}
+              className="w-full bg-white h-full flex justify-center"
+            >
+              <source srcSet={`${src}?tr=w-500`} media="(max-width: 450px)" />
+              <source srcSet={`${src}?tr=w-600`} media="(max-width: 550px)" />
+              <source srcSet={`${src}?tr=w-800`} media="(max-width: 750px)" />
+              <img
+                src={`${src}?tr=w-1000`}
+                alt={alt}
+                loading={index < 2 ? "eager" : "lazy"}
+                className={`w-full h-[375px] tablet:h-[475px] desktop:h-[580px] ${
                   objectFit ? "object-cover" : "object-contain"
                 }`}
-                src={item.src}
-                alt={item.alt}
-                loading={index < 2 ? "eager" : "lazy"}
-                width={906}
-                height={604}
-                quality={50}
               />
-            </div>
+            </picture>
           </SplideSlide>
         ))}
       </Splide>
@@ -81,20 +81,32 @@ const Slideshow = ({
               arrows: true,
             }}
           >
-            {imageList.map((item, index) => (
+            {imageList.map(({ src, alt }, index) => (
               <SplideSlide key={index}>
-                <div className="w-full bg-black h-full flex justify-center">
-                  <Image
-                    onClick={() => handleThumbs(index)}
-                    className="object-cover w-full h-36 hover:opacity-80 cursor-pointer"
-                    src={item.src}
-                    alt={item.alt}
-                    loading={index < 2 ? "eager" : "lazy"}
-                    width={110}
-                    height={110}
-                    quality={50}
+                <picture
+                  key={index}
+                  className="w-full bg-black h-full flex justify-center"
+                  onClick={() => handleThumbs(index)}
+                >
+                  <source
+                    srcSet={`${src}?tr=w-500`}
+                    media="(max-width: 450px)"
                   />
-                </div>
+                  <source
+                    srcSet={`${src}?tr=w-600`}
+                    media="(max-width: 550px)"
+                  />
+                  <source
+                    srcSet={`${src}?tr=w-800`}
+                    media="(max-width: 750px)"
+                  />
+                  <img
+                    src={`${src}?tr=w-1000`}
+                    alt={alt}
+                    loading={index < 2 ? "eager" : "lazy"}
+                    className="object-cover w-full h-[110px] hover:opacity-80 cursor-pointer"
+                  />
+                </picture>
               </SplideSlide>
             ))}
           </Splide>
