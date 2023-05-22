@@ -48,14 +48,14 @@ const Slideshow = ({
               key={index}
               className="w-full bg-white h-full flex justify-center"
             >
-              <source srcSet={`${src}?tr=w-450`} media="(max-width: 450px)" />
-              <source srcSet={`${src}?tr=w-550`} media="(max-width: 550px)" />
-              <source srcSet={`${src}?tr=w-750`} media="(max-width: 750px)" />
+              <source srcSet={`${src}?tr=w-500`} media="(max-width: 450px)" />
+              <source srcSet={`${src}?tr=w-600`} media="(max-width: 550px)" />
+              <source srcSet={`${src}?tr=w-800`} media="(max-width: 750px)" />
               <img
-                src={`${src}?tr=w-1000`}
+                src={`${src}?tr=w-1050`}
                 alt={alt}
                 loading={index < 2 ? "eager" : "lazy"}
-                className={`w-full h-[375px] tablet:h-[475px] desktop:h-[580px] ${
+                className={`w-full h-[350px] tablet:h-[475px] desktop:h-[580px] ${
                   objectFit ? "object-cover" : "object-contain"
                 }`}
               />
