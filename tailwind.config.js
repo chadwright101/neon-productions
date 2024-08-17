@@ -44,10 +44,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        flowers:
-          "url('https://ik.imagekit.io/thewrightdesigns/neon-productions/general/peonies-background-tumblr-7-2.jpg')",
-        golden:
-          "url('https://ik.imagekit.io/thewrightdesigns/neon-productions/general/gold.webp')",
+        flowers: "url('/images/general/peonies-background-tumblr-7-2.webp')",
+        golden: "url('/images/general/gold.webp')",
       },
     },
   },

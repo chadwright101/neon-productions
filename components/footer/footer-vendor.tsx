@@ -9,11 +9,11 @@ const FooterVendor = ({ classes }: Props) => {
     >
       <picture>
         <source
-          srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/ROCKSTAR_VENDOR_BADGE.png?tr=w-144"
+          srcSet="/images/general/ROCKSTAR_VENDOR_BADGE.webp?tr=w-144"
           media="(max-width: 750px)"
         />
         <img
-          src="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/ROCKSTAR_VENDOR_BADGE.png?tr=w-260"
+          src="/images/general/ROCKSTAR_VENDOR_BADGE.webp?tr=w-260"
           alt="Rockstar vendor badge"
           className="py-4 w-28 m-auto h-full desktop:w-56"
           loading="lazy"

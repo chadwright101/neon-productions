@@ -19,15 +19,15 @@ const DressHire = () => {
         <div className="grid justify-items-center gap-8 desktop:grid-cols-2">
           <picture>
             <source
-              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220613_144947_0000.jpg?tr=w-440"
+              srcSet="/images/dress-hire/20220613_144947_0000.webp?tr=w-440"
               media="(max-width: 500px)"
             />
             <source
-              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220613_144947_0000.jpg?tr=w-690"
+              srcSet="/images/dress-hire/20220613_144947_0000.webp?tr=w-690"
               media="(max-width: 750px)"
             />
             <img
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220613_144947_0000.jpg?tr=w-1000"
+              src="/images/dress-hire/20220613_144947_0000.webp?tr=w-1000"
               className="col-span-full"
               alt="Dress hire examples"
               loading="eager"
@@ -35,15 +35,15 @@ const DressHire = () => {
           </picture>
           <picture>
             <source
-              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/png_20220613_100701_0000.jpg?tr=w-440"
+              srcSet="/images/dress-hire/png_20220613_100701_0000.webp?tr=w-440"
               media="(max-width: 500px)"
             />
             <source
-              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/png_20220613_100701_0000.jpg?tr=w-690"
+              srcSet="/images/dress-hire/png_20220613_100701_0000.webp?tr=w-690"
               media="(max-width: 750px)"
             />
             <img
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/png_20220613_100701_0000.jpg?tr=w-1000"
+              src="/images/dress-hire/png_20220613_100701_0000.webp?tr=w-1000"
               className="col-span-full"
               alt="Dress hire article"
               loading="lazy"
@@ -51,15 +51,15 @@ const DressHire = () => {
           </picture>
           <picture>
             <source
-              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220605_112329_0000.jpg?tr=w-440"
+              srcSet="/images/dress-hire/20220605_112329_0000.webp?tr=w-440"
               media="(max-width: 500px)"
             />
             <source
-              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220605_112329_0000.jpg?tr=w-690"
+              srcSet="/images/dress-hire/20220605_112329_0000.webp?tr=w-690"
               media="(max-width: 750px)"
             />
             <img
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/dress-hire/20220605_112329_0000.jpg?tr=w-1000"
+              src="/images/dress-hire/20220605_112329_0000.webp?tr=w-1000"
               className="col-span-full"
               alt="Dress photography shoot special"
               loading="lazy"
@@ -75,7 +75,7 @@ const DressHire = () => {
             <li key={index}>
               <a
                 className="py-2 text-blue desktop:hover:underline"
-                href={`https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/neon-productions/dress-hire/catalogues/Neon-Dress-Catalogue-Size-${item.size}.pdf`}
+                href={`/images/dress-hire/catalogues/Neon-Dress-Catalogue-Size-${item.size}.pdf`}
                 target="_blank"
                 rel="noreferrer"
               >

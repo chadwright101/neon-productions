@@ -84,7 +84,7 @@
     }
 
     .golden-nav {
-        background-image: url('https://ik.imagekit.io/thewrightdesigns/neon-productions/general/gold.webp');
+        background-image: url('/images/general/gold.webp');
         background-size: cover;
         background-clip: text;
         -webkit-background-clip: text;
@@ -93,12 +93,12 @@
     }
 
     .golden-nav:hover {
-        background-image: url('https://ik.imagekit.io/thewrightdesigns/neon-productions//general/gold2.webp');
+        background-image: url('/images//general/gold2.webp');
     }
 
     .golden {
         text-align: center;
-        background-image: url('https://ik.imagekit.io/thewrightdesigns/neon-productions//general/gold2.webp');
+        background-image: url('/images//general/gold2.webp');
         background-size: cover;
         background-clip: text;
         -webkit-background-clip: text;
@@ -107,11 +107,11 @@
     }
 
     .golden-hover-1:hover {
-        background-image: url('https://ik.imagekit.io/thewrightdesigns/neon-productions//general/gold.webp');
+        background-image: url('/images//general/gold.webp');
     }
 
     .golden-hover-2:hover {
-        background-image: url('https://ik.imagekit.io/thewrightdesigns/neon-productions//general/gold2.webp');
+        background-image: url('/images//general/gold2.webp');
     }
 
 

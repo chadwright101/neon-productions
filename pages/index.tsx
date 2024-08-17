@@ -18,11 +18,11 @@ export default function Home() {
       </Head>
       <picture>
         <source
-          srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/peonies-background-tumblr-7.jpg?tr=w-500"
+          srcSet="/images/general/peonies-background-tumblr-7.webp?tr=w-500"
           media="(max-width: 500px)"
         />
         <img
-          src="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/peonies-background-tumblr-7.jpg?tr=w-800"
+          src="/images/general/peonies-background-tumblr-7.webp?tr=w-800"
           className="w-[800px] h-full m-auto object-cover"
           alt="A bunch of pink flowers"
         />
@@ -40,7 +40,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <Image
               className="object-cover h-[245px] w-[360px]"
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan4.webp"
+              src="/images/your-photographer/morgan4.webp"
               alt=""
               loading="lazy"
               width={400}
@@ -48,7 +48,7 @@ export default function Home() {
             />
             <Image
               className=" object-cover h-[245px] w-[190px]"
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan1.webp"
+              src="/images/your-photographer/morgan1.webp"
               alt=""
               loading="lazy"
               width={400}
@@ -56,7 +56,7 @@ export default function Home() {
             />
             <Image
               className="hidden desktop:block object-cover h-[245px] w-[190px]"
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan3.webp"
+              src="/images/your-photographer/morgan3.webp"
               alt=""
               loading="lazy"
               width={400}
@@ -64,7 +64,7 @@ export default function Home() {
             />
             <Image
               className="object-cover h-[245px] w-[190px]"
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan2.webp"
+              src="/images/your-photographer/morgan2.webp"
               alt=""
               loading="lazy"
               width={400}

@@ -19,11 +19,11 @@ const Header = () => {
           <picture>
             <source
               media="(max-width: 1000px)"
-              srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/neon-photography-logo.jpg?tr=w-180"
+              srcSet="/images/general/neon-photography-logo.webp?tr=w-180"
             />
             <img
               className="h-full w-44 py-1 desktop:w-60"
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/general/neon-photography-logo.jpg?tr=w-250"
+              src="/images/general/neon-photography-logo.webp?tr=w-250"
               alt="Neon Productions logo"
               loading="eager"
             />

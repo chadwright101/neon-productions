@@ -14,7 +14,7 @@ const YourPhotographer = () => {
   const [newbornHover, setNewbornHover] = useState(false);
   const imageList = [
     {
-      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/lifestyle/page/lifestyle-page-45.jpg?tr=w-350",
+      src: "/images/portfolio/lifestyle/page/lifestyle-page-45.webp?tr=w-350",
       alt: "Lifestyle photography from Neon Productions",
       classes: "collage-1",
       title: "Lifestyle",
@@ -25,7 +25,7 @@ const YourPhotographer = () => {
       hover: lifestyleHover,
     },
     {
-      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/corporate/page/corporate-page-43.jpg?tr=w-350",
+      src: "/images/portfolio/corporate/page/corporate-page-43.webp?tr=w-350",
       alt: "Corporate photography from Neon Productions",
       classes: "collage-2",
       title: "Corporate",
@@ -36,7 +36,7 @@ const YourPhotographer = () => {
       hover: corporateHover,
     },
     {
-      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/boudoir/page/boudoir-page-30.jpg?tr=w-350",
+      src: "/images/portfolio/boudoir/page/boudoir-page-30.webp?tr=w-350",
       alt: "Boudoir photography from Neon Productions",
       classes: "collage-3",
       title: "Boudoir",
@@ -46,7 +46,7 @@ const YourPhotographer = () => {
       hover: boudoirHover,
     },
     {
-      src: "https://ik.imagekit.io/thewrightdesigns/neon-productions/portfolio/newborn/page/newborn-page-13.jpg?tr=w-350",
+      src: "/images/portfolio/newborn/page/newborn-page-13.webp?tr=w-350",
       alt: "Newborn photography from Neon Productions",
       classes: "collage-4",
       title: "Newborn",
@@ -78,7 +78,7 @@ const YourPhotographer = () => {
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <Image
               className="object-cover h-[245px] w-[360px]"
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan4.webp?tr=w-380"
+              src="/images/your-photographer/morgan4.webp?tr=w-380"
               alt=""
               priority
               width={400}
@@ -86,7 +86,7 @@ const YourPhotographer = () => {
             />
             <Image
               className=" object-cover h-[245px] w-[190px]"
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan1.webp"
+              src="/images/your-photographer/morgan1.webp"
               alt=""
               priority
               width={400}
@@ -94,7 +94,7 @@ const YourPhotographer = () => {
             />
             <Image
               className="hidden desktop:block object-cover h-[245px] w-[190px]"
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan3.webp"
+              src="/images/your-photographer/morgan3.webp"
               alt=""
               priority
               width={400}
@@ -102,7 +102,7 @@ const YourPhotographer = () => {
             />
             <Image
               className="object-cover h-[245px] w-[190px]"
-              src="https://ik.imagekit.io/thewrightdesigns/neon-productions/your-photographer/morgan2.webp"
+              src="/images/your-photographer/morgan2.webp"
               alt=""
               priority
               width={400}

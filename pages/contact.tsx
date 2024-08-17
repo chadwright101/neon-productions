@@ -20,7 +20,7 @@ const Contact = () => {
             <li className="flex gap-4 items-center font-light">
               <Image
                 className="hidden tablet:block w-12 h-full"
-                src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Untitled-zdfgbc.png"
+                src="/images/graphics/Untitled-zdfgbc.webp"
                 alt="Email address icon"
                 width={100}
                 height={100}
@@ -35,7 +35,7 @@ const Contact = () => {
             <li className="flex gap-4 items-center font-light">
               <Image
                 className="hidden tablet:block w-12 h-full"
-                src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/dxhfg.png"
+                src="/images/graphics/dxhfg.webp"
                 alt="Phone number icon"
                 width={100}
                 height={100}
@@ -55,7 +55,7 @@ const Contact = () => {
               >
                 <Image
                   className="w-[53px] h-full"
-                  src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/instagram.png"
+                  src="/images/graphics/instagram.webp"
                   alt="Instagram logo"
                   width={100}
                   height={100}
@@ -79,7 +79,7 @@ const Contact = () => {
               >
                 <Image
                   className="w-[43px] h-full"
-                  src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Facebook.png"
+                  src="/images/graphics/Facebook.webp"
                   alt="Facebook logo"
                   width={100}
                   height={100}
@@ -103,7 +103,7 @@ const Contact = () => {
               >
                 <Image
                   className="w-12 h-full"
-                  src="https://ik.imagekit.io/thewrightdesigns/neon-productions/graphics/Pinterest.png"
+                  src="/images/graphics/Pinterest.webp"
                   alt="Pinterest logo"
                   width={100}
                   height={100}
@@ -122,15 +122,15 @@ const Contact = () => {
         </div>
         <picture>
           <source
-            srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/contact/bts2.jpg?tr=h-500"
+            srcSet="/images/contact/bts.webp?tr=h-500"
             media="(max-width: 500px)"
           />
           <source
-            srcSet="https://ik.imagekit.io/thewrightdesigns/neon-productions/contact/bts2.jpg?tr=w-750"
+            srcSet="/images/contact/bts.webp?tr=w-750"
             media="(max-width: 1000px)"
           />
           <img
-            src="https://ik.imagekit.io/thewrightdesigns/neon-productions/contact/bts2.jpg?tr=w-350"
+            src="/images/contact/bts.webp?tr=w-350"
             alt="Morgan on location at a photoshoot"
             className="w-[750px] h-[500px] object-cover mt-12 desktop:w-[350px] desktop:h-[370px] -translate-y-12"
           />
