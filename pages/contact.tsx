@@ -1,9 +1,34 @@
 import Image from "next/image";
-import ContentPadding from "../components/content-padding";
-import Heading, { HeadingVariant } from "../components/heading";
+import { useState } from "react";
 import Head from "next/head";
 
+import ContentPadding from "../components/content-padding";
+import Heading, { HeadingVariant } from "../components/heading";
+
 const Contact = () => {
+  const [showEmail, setShowEmail] = useState("Show email address");
+  const [showPhone, setShowPhone] = useState("Show phone number");
+
+  const fetchPhone = async () => {
+    try {
+      const response = await fetch("/api/contact-details");
+      const data = await response.json();
+      setShowPhone(data.phone);
+    } catch (error) {
+      console.error("Error fetching contact data:", error);
+    }
+  };
+
+  const fetchEmail = async () => {
+    try {
+      const response = await fetch("/api/contact-details");
+      const data = await response.json();
+      setShowEmail(data.email);
+    } catch (error) {
+      console.error("Error fetching contact data:", error);
+    }
+  };
+
   return (
     <ContentPadding>
       <Head>
@@ -25,12 +50,21 @@ const Contact = () => {
                 width={100}
                 height={100}
               />
-              <a
-                className="hover:desktop:underline"
-                href="mailto:morgan@neonproductions.co.za"
-              >
-                morgan@neonproductions.co.za
-              </a>
+              {showEmail === "Show email address" ? (
+                <button
+                  className="italic hover:desktop:underline underline-offset-4"
+                  onClick={fetchEmail}
+                >
+                  {showEmail}
+                </button>
+              ) : (
+                <a
+                  className="text-blue hover:desktop:underline underline-offset-4"
+                  href={`mailto:${showEmail}`}
+                >
+                  {showEmail}
+                </a>
+              )}
             </li>
             <li className="flex gap-4 items-center font-light">
               <Image
@@ -40,9 +74,21 @@ const Contact = () => {
                 width={100}
                 height={100}
               />
-              <a className="hover:desktop:underline" href="tel:+27827728980">
-                +27 82 772 8980
-              </a>
+              {showPhone === "Show phone number" ? (
+                <button
+                  className="italic hover:desktop:underline underline-offset-4"
+                  onClick={fetchPhone}
+                >
+                  {showPhone}
+                </button>
+              ) : (
+                <a
+                  className="text-blue hover:desktop:underline underline-offset-4"
+                  href={`tel:${showPhone}`}
+                >
+                  {showPhone}
+                </a>
+              )}
             </li>
           </ul>
           <ul className="mt-8 flex gap-8 text-lg font-light desktop:flex-col">
@@ -62,7 +108,7 @@ const Contact = () => {
                 />
               </a>
               <a
-                className="hidden desktop:block hover:desktop:underline"
+                className="hidden desktop:block hover:desktop:underline underline-offset-4"
                 href="https://www.instagram.com/neonproductionssa/"
                 target="_blank"
                 rel="noreferrer"
@@ -86,7 +132,7 @@ const Contact = () => {
                 />
               </a>
               <a
-                className="hidden desktop:block hover:desktop:underline"
+                className="hidden desktop:block hover:desktop:underline underline-offset-4"
                 href="https://www.facebook.com/neonphotoproductions/"
                 target="_blank"
                 rel="noreferrer"
@@ -110,7 +156,7 @@ const Contact = () => {
                 />
               </a>
               <a
-                className="hidden desktop:block hover:desktop:underline"
+                className="hidden desktop:block hover:desktop:underline underline-offset-4"
                 href="https://za.pinterest.com/neonproductionssa/"
                 target="_blank"
                 rel="noreferrer"
