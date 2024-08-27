@@ -46,7 +46,10 @@ const FooterContact = ({ classes }: Props) => {
               {showEmail}
             </button>
           ) : (
-            <a className="desktop:hover:underline" href={`mailto:${showEmail}`}>
+            <a
+              className="desktop:hover:underline underline-offset-4"
+              href={`mailto:${showEmail}`}
+            >
               {showEmail}
             </a>
           )}
@@ -54,11 +57,17 @@ const FooterContact = ({ classes }: Props) => {
         <li>
           Tel:{" "}
           {showPhone === "Show phone number" ? (
-            <button className="desktop:hover:underline" onClick={fetchPhone}>
+            <button
+              className="italic hover:desktop:underline underline-offset-4"
+              onClick={fetchPhone}
+            >
               {showPhone}
             </button>
           ) : (
-            <a className="desktop:hover:underline" href={`tel:${showPhone}`}>
+            <a
+              className="desktop:hover:underline underline-offset-4"
+              href={`tel:${showPhone}`}
+            >
               {showPhone}
             </a>
           )}
