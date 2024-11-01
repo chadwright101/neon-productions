@@ -27,6 +27,13 @@ export default function Home() {
           alt="A bunch of pink flowers"
         />
       </picture>
+      <Image
+        src="/images/best-of-joburg/Winner_BOJ_Horizontal_2024.png"
+        alt="Neon Productions - Best of Joburg winner 2024"
+        width={1000}
+        height={300}
+        className="w-full px-10 max-w-[1000px] mx-auto mt-5 mb-10 animate-pulse"
+      />
       <Slideshow imageList={homeSlideImages} objectFit={true} />
       <ContentPadding>
         <main className="desktop:hidden home-your-photographer">
