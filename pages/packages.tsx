@@ -8,16 +8,11 @@ const PackagesPricing = () => {
   return (
     <main>
       <Head>
-        <title>Packages & Pricing - Neon Productions </title>
-        <meta
-          name="description"
-          content="Packages and pricing from Neon Productions"
-        />
+        <title>Packages - Neon Productions </title>
+        <meta name="description" content="Packages from Neon Productions" />
       </Head>
       <ContentPadding>
-        <Heading variant={HeadingVariant.PageHeading}>
-          Packages & Pricing
-        </Heading>
+        <Heading variant={HeadingVariant.PageHeading}>Packages</Heading>
         <GoldLine horizontal line1 classes="mb-8 desktop:mb-16" />
         <div className="flex flex-col gap-8">
           {packagesImages.map(({ src }, index) => (
