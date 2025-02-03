@@ -56,7 +56,7 @@ const Slideshow = ({
                 alt={alt}
                 loading={index < 2 ? "eager" : "lazy"}
                 className={`w-full h-[350px] tablet:h-[475px] desktop:h-[580px] ${
-                  objectFit ? "object-cover" : "object-contain"
+                  objectFit && index !== 1 ? "object-cover" : "object-contain"
                 }`}
               />
             </picture>
