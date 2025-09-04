@@ -75,38 +75,46 @@ const YourPhotographer = () => {
             Hi there! This is me, your main Photographer, Morgan. But you can
             call me Morgz, or Moo.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center mb-8">
+          <div className="grid grid-cols-2 gap-4 justify-center mb-8 tablet:grid-cols-3">
             <Image
-              className="object-cover h-[245px] w-[360px]"
-              src="/images/your-photographer/morgan4.webp?tr=w-380"
+              className="object-cover col-span-2 h-full w-full"
+              src="/images/your-photographer/morgan-3.jpg"
               alt=""
-              priority
-              width={400}
-              height={300}
+              loading="lazy"
+              width={685}
+              height={445}
             />
             <Image
-              className=" object-cover h-[245px] w-[190px]"
-              src="/images/your-photographer/morgan1.webp"
+              className="object-cover h-full w-full"
+              src="/images/your-photographer/morgan-2.jpg"
               alt=""
-              priority
-              width={400}
-              height={300}
+              loading="lazy"
+              width={850}
+              height={470}
             />
             <Image
-              className="hidden desktop:block object-cover h-[245px] w-[190px]"
-              src="/images/your-photographer/morgan3.webp"
+              className="object-cover h-full w-full"
+              src="/images/your-photographer/morgan-1.jpg"
               alt=""
-              priority
-              width={400}
-              height={300}
+              loading="lazy"
+              width={335}
+              height={470}
             />
             <Image
-              className="object-cover h-[245px] w-[190px]"
-              src="/images/your-photographer/morgan2.webp"
+              className="object-cover h-full w-full"
+              src="/images/your-photographer/morgan-4.jpg"
               alt=""
-              priority
-              width={400}
-              height={300}
+              loading="lazy"
+              width={335}
+              height={470}
+            />
+            <Image
+              className="object-cover h-full w-full"
+              src="/images/your-photographer/morgan-5.jpg"
+              alt=""
+              loading="lazy"
+              width={335}
+              height={470}
             />
           </div>
           <p>

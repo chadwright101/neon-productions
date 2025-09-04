@@ -31,7 +31,7 @@ export default function Home() {
         src="/images/best-of-joburg/Winner_BOJ_Horizontal_2024.png"
         alt="Neon Productions - Best of Joburg winner 2024"
         width={1000}
-        height={300}
+        height={400}
         className="w-full px-10 max-w-[1000px] mx-auto mt-5 mb-10 animate-pulse"
       />
       <Slideshow imageList={homeSlideImages} objectFit={true} />
@@ -44,38 +44,46 @@ export default function Home() {
             Hi there! This is me, your main Photographer, Morgan. But you can
             call me Morgz, or Moo.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center mb-8">
+          <div className="grid grid-cols-2 gap-4 justify-center mb-8 tablet:grid-cols-3">
             <Image
-              className="object-cover h-[245px] w-[360px]"
-              src="/images/your-photographer/morgan4.webp"
+              className="object-cover col-span-2 h-full w-full"
+              src="/images/your-photographer/morgan-3.jpg"
               alt=""
               loading="lazy"
-              width={400}
-              height={300}
+              width={685}
+              height={445}
             />
             <Image
-              className=" object-cover h-[245px] w-[190px]"
-              src="/images/your-photographer/morgan1.webp"
+              className="object-cover h-full w-full"
+              src="/images/your-photographer/morgan-2.jpg"
               alt=""
               loading="lazy"
-              width={400}
-              height={300}
+              width={850}
+              height={470}
             />
             <Image
-              className="hidden desktop:block object-cover h-[245px] w-[190px]"
-              src="/images/your-photographer/morgan3.webp"
+              className="object-cover h-full w-full"
+              src="/images/your-photographer/morgan-1.jpg"
               alt=""
               loading="lazy"
-              width={400}
-              height={300}
+              width={335}
+              height={470}
             />
             <Image
-              className="object-cover h-[245px] w-[190px]"
-              src="/images/your-photographer/morgan2.webp"
+              className="object-cover h-full w-full"
+              src="/images/your-photographer/morgan-4.jpg"
               alt=""
               loading="lazy"
-              width={400}
-              height={300}
+              width={335}
+              height={470}
+            />
+            <Image
+              className="object-cover h-full w-full"
+              src="/images/your-photographer/morgan-5.jpg"
+              alt=""
+              loading="lazy"
+              width={335}
+              height={470}
             />
           </div>
           <p>
