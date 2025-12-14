@@ -13,9 +13,9 @@ const Collage = ({ imageList, classes, lazy }: Props) => {
     <div className={`collage ${classes}`}>
       {imageList.map(({ src, alt, classes }, index) => (
         <picture className={classes} key={index}>
-          <source srcSet={`${src}?tr=w-260`} media="(max-width: 1249px)" />
+          <source srcSet={`${src}`} media="(max-width: 1249px)" />
           <img
-            src={`${src}?tr=h-520`}
+            src={`${src}`}
             alt={alt}
             loading={lazy ? "lazy" : "eager"}
           />

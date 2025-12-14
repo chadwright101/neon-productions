@@ -48,11 +48,11 @@ const Slideshow = ({
               key={index}
               className="w-full bg-white h-full flex justify-center"
             >
-              <source srcSet={`${src}?tr=w-500`} media="(max-width: 450px)" />
-              <source srcSet={`${src}?tr=w-600`} media="(max-width: 550px)" />
-              <source srcSet={`${src}?tr=w-800`} media="(max-width: 750px)" />
+              <source srcSet={`${src}`} media="(max-width: 450px)" />
+              <source srcSet={`${src}`} media="(max-width: 550px)" />
+              <source srcSet={`${src}`} media="(max-width: 750px)" />
               <img
-                src={`${src}?tr=w-1050`}
+                src={`${src}`}
                 alt={alt}
                 loading={index < 2 ? "eager" : "lazy"}
                 className={`w-full h-[350px] tablet:h-[475px] desktop:h-[580px] ${
@@ -89,7 +89,7 @@ const Slideshow = ({
                   onClick={() => handleThumbs(index)}
                 >
                   <img
-                    src={`${src}?tr=w-175`}
+                    src={`${src}`}
                     alt={alt}
                     loading={index < 2 ? "eager" : "lazy"}
                     className="object-cover w-full h-[110px] hover:opacity-80 cursor-pointer"

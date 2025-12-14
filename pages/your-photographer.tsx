@@ -14,7 +14,7 @@ const YourPhotographer = () => {
   const [newbornHover, setNewbornHover] = useState(false);
   const imageList = [
     {
-      src: "/images/portfolio/lifestyle/page/lifestyle-page-45.webp?tr=w-350",
+      src: "/images/portfolio/lifestyle/page/lifestyle-page-45.webp",
       alt: "Lifestyle photography from Neon Productions",
       classes: "collage-1",
       title: "Lifestyle",
@@ -25,7 +25,7 @@ const YourPhotographer = () => {
       hover: lifestyleHover,
     },
     {
-      src: "/images/portfolio/corporate/page/corporate-page-43.webp?tr=w-350",
+      src: "/images/portfolio/corporate/page/corporate-page-43.webp",
       alt: "Corporate photography from Neon Productions",
       classes: "collage-2",
       title: "Corporate",
@@ -36,7 +36,7 @@ const YourPhotographer = () => {
       hover: corporateHover,
     },
     {
-      src: "/images/portfolio/boudoir/page/boudoir-page-30.webp?tr=w-350",
+      src: "/images/portfolio/boudoir/page/boudoir-page-30.webp",
       alt: "Boudoir photography from Neon Productions",
       classes: "collage-3",
       title: "Boudoir",
@@ -46,7 +46,7 @@ const YourPhotographer = () => {
       hover: boudoirHover,
     },
     {
-      src: "/images/portfolio/newborn/page/newborn-page-13.webp?tr=w-350",
+      src: "/images/portfolio/newborn/page/newborn-page-13.webp",
       alt: "Newborn photography from Neon Productions",
       classes: "collage-4",
       title: "Newborn",
@@ -197,7 +197,7 @@ const YourPhotographer = () => {
               ) => (
                 <li key={index}>
                   <picture className={classes} key={index}>
-                    <img src={`${src}?tr=w-315`} alt={alt} loading="lazy" />
+                    <img src={`${src}`} alt={alt} loading="lazy" />
                   </picture>
                   <p className={classes}>
                     <span className="font-bold">{line1}</span>

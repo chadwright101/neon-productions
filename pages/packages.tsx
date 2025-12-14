@@ -17,10 +17,10 @@ const PackagesPricing = () => {
         <div className="flex flex-col gap-8">
           {packagesImages.map(({ src }, index) => (
             <picture key={index}>
-              <source srcSet={`${src}?tr=w-440`} media="(max-width: 500px)" />
-              <source srcSet={`${src}?tr=w-690`} media="(max-width: 750px)" />
+              <source srcSet={`${src}`} media="(max-width: 500px)" />
+              <source srcSet={`${src}`} media="(max-width: 750px)" />
               <img
-                src={`${src}?tr=w-1000`}
+                src={`${src}`}
                 alt="Packages and pricing from Neon Productions"
                 loading={index < 2 ? "eager" : "lazy"}
               />

@@ -168,15 +168,15 @@ const Contact = () => {
         </div>
         <picture>
           <source
-            srcSet="/images/contact/bts.webp?tr=h-500"
+            srcSet="/images/contact/bts.webp"
             media="(max-width: 500px)"
           />
           <source
-            srcSet="/images/contact/bts.webp?tr=w-750"
+            srcSet="/images/contact/bts.webp"
             media="(max-width: 1000px)"
           />
           <img
-            src="/images/contact/bts.webp?tr=w-350"
+            src="/images/contact/bts.webp"
             alt="Morgan on location at a photoshoot"
             className="w-[750px] h-[500px] object-cover mt-12 desktop:w-[350px] desktop:h-[370px] -translate-y-12"
           />

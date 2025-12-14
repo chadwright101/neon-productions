@@ -16,11 +16,11 @@ const FooterSocial = ({ classes }: Props) => {
         >
           <picture>
             <source
-              srcSet="/images/graphics/instagram.webp?tr=w-50"
+              srcSet="/images/graphics/instagram.webp"
               media="(max-width: 750px)"
             />
             <img
-              src="/images/graphics/instagram.webp?tr=w-30"
+              src="/images/graphics/instagram.webp"
               className="w-[52px] h-auto desktop:w-[30px]"
               alt="Instagram logo"
               loading="lazy"
@@ -37,11 +37,11 @@ const FooterSocial = ({ classes }: Props) => {
         >
           <picture>
             <source
-              srcSet="/images/graphics/Facebook.webp?tr=w-50"
+              srcSet="/images/graphics/Facebook.webp"
               media="(max-width: 750px)"
             />
             <img
-              src="/images/graphics/Facebook.webp?tr=w-30"
+              src="/images/graphics/Facebook.webp"
               className="w-[44px] h-auto desktop:w-[25px]"
               alt="Facebook logo"
               loading="lazy"
@@ -58,11 +58,11 @@ const FooterSocial = ({ classes }: Props) => {
         >
           <picture>
             <source
-              srcSet="/images/graphics/Pinterest.webp?tr=w-50"
+              srcSet="/images/graphics/Pinterest.webp"
               media="(max-width: 750px)"
             />
             <img
-              src="/images/graphics/Pinterest.webp?tr=w-30"
+              src="/images/graphics/Pinterest.webp"
               className="w-12 h-auto desktop:w-7"
               alt="Pinterest logo"
               loading="lazy"

@@ -18,11 +18,11 @@ export default function Home() {
       </Head>
       <picture>
         <source
-          srcSet="/images/general/peonies-background-tumblr-7.webp?tr=w-500"
+          srcSet="/images/general/peonies-background-tumblr-7.webp"
           media="(max-width: 500px)"
         />
         <img
-          src="/images/general/peonies-background-tumblr-7.webp?tr=w-800"
+          src="/images/general/peonies-background-tumblr-7.webp"
           className="w-[800px] h-full m-auto object-cover"
           alt="A bunch of pink flowers"
         />
