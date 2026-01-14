@@ -1,23 +1,20 @@
 [
   {
-    "src": "/images/packages/wedding-packages.png"
+    "src": "/images/packages/newborn-packages.png"
   },
   {
-    "src": "/images/packages/newborn-packages.jpg"
-  },
-  {
-    "src": "/images/packages/maternity-packages.jpg"
-  },
-  {
-    "src": "/images/packages/engagement-packages.png"
+    "src": "/images/packages/maternity-packages.png"
   },
   {
     "src": "/images/packages/family-packages.png"
   },
   {
-    "src": "/images/packages/md-packages.jpg"
+    "src": "/images/packages/md-packages.png"
   },
   {
-    "src": "/images/packages/boudior-packages.jpg"
+    "src": "/images/packages/boudior-packages.png"
+  },
+  {
+    "src": "/images/packages/couples-packages.png"
   }
 ]
